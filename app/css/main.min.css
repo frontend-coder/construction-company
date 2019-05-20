@@ -4189,7 +4189,7 @@ ul {
 
 .header_buner {
   min-height: 740px;
-  background: transparent url("/img/fon-header.jpg") center center no-repeat;
+  background: transparent url("../img/fon-header.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -4306,7 +4306,7 @@ ul {
 }
 
 .wellcome_right_img {
-  background: url("/img/wellcome-under.png") center center no-repeat;
+  background: url("../img/wellcome-under.png") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -4321,7 +4321,7 @@ ul {
   top: 54%;
   margin-left: -129px;
   margin-top: -263px;
-  background-image: url("/img/wellcome-top.png");
+  background-image: url("../img/wellcome-top.png");
   width: 258px;
   height: 472px;
 }
@@ -4440,7 +4440,7 @@ ul {
 .reviews_fon {
   min-height: 740px;
   padding: 66px 0 44px 0;
-  background: transparent url("/img/reviews-fon.jpg") center center no-repeat;
+  background: transparent url("../img/reviews-fon.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -4629,7 +4629,7 @@ ul {
 .footer_top_fon {
   padding: 100px 0 60px 0;
   min-height: 540px;
-  background: transparent url("/img/footer-fon.jpg") center center no-repeat;
+  background: transparent url("../img/footer-fon.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   position: relative;
@@ -4682,10 +4682,155 @@ ul {
   margin-bottom: 40px;
 }
 
+.bottom_logo {
+  margin-bottom: 15px;
+}
+
 .bottom_logo img {
   display: inline-block;
   width: 80%;
   height: auto;
+}
+
+.footer_bottom_text {
+  font-size: 0.9375rem;
+  margin-bottom: 30px;
+  font-family: "OpenSansLight", sans-serif;
+}
+
+.footer_bottom_social li {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.footer_bottom_social li a {
+  background-color: #ffcb0f;
+  line-height: 1.6;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  font-size: 0.8rem;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #000;
+}
+
+.footer_pages_links {
+  padding: 0 0 0 20px;
+}
+
+.footer_pages_links li a {
+  font-size: 0.9375rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-family: "OpenSansLight", sans-serif;
+}
+
+.footer_pages_links li a:after {
+  top: 0;
+  left: -14px;
+  font-size: 0.9375rem;
+  position: absolute;
+  content: '\f0da';
+  color: #fff;
+  font-weight: 900;
+  font-family: "FontAwesome";
+}
+
+.footer_latest_post li {
+  margin-bottom: 20px;
+}
+
+.footer_latest_post li a {
+  font-size: 0.9375rem;
+  font-family: "OpenSansLight", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer_latest_post li a:hover {
+  color: #fefefe;
+}
+
+.footer_post_wrap {
+  border: 1px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  float: left;
+}
+
+.footer_post_date {
+  font-size: 1.25rem;
+}
+
+.footer_post_month {
+  display: block;
+  font-size: 0.75rem;
+  font-family: "OpenSansLight", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer_contacts {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.footer_contacts li {
+  margin-bottom: 10px;
+  font-size: 0.9375rem;
+  font-family: "OpenSansLight", sans-serif;
+}
+
+.footer_contacts li span {
+  position: relative;
+}
+
+.footer_contacts li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 1.9000;
+  position: relative;
+}
+
+.footer_contacts li span:before,
+.footer_contacts li a[href^="mailto:"]:before,
+.footer_contacts li a[href^="tell:"]:first-child:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+.footer_contacts li span:before {
+  top: 2px;
+  left: -18px;
+  font-size: 0.9375rem;
+  content: '\f041';
+}
+
+.footer_contacts li a[href^="mailto:"]:before {
+  top: 2px;
+  left: -20px;
+  font-size: 0.7rem;
+  content: '\f0e0';
+}
+
+.footer_contacts li a[href^="tell:"]:first-child:before {
+  top: 0;
+  left: -18px;
+  font-size: 1.200rem;
+  content: '\f10b';
 }
 
 .footer_top_one, .footer_top_two,
