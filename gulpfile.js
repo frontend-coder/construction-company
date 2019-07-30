@@ -49,14 +49,42 @@ gulp.task('styles', () => {
 .pipe(gulp.dest('app/css'));
 });
 
+
+
+gulp.task('calculatestyles', () => {
+	var sassFiles = [
+	'app/scss/libs.scss',
+	'app/scss/calculate.scss'
+	];
+	return gulp.src(sassFiles)
+	.pipe(plumber({
+		errorHandler: notify.onError({
+			message: function(error) {
+				return error.message;
+			}})
+	}))
+	.pipe(sourcemaps.init())
+	.pipe(sass({ outputStyle: 'expanded' }))
+	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade:true}))
+	.pipe(concat('calculate.css'))
+	.pipe(rename('calculate.min.css'))
+//.pipe(cleancss( {level: { 2: { specialComments: 0 } } })) // Opt., comment out when debugging
+.pipe(filesize()).on('error', gulpUtil.log)
+.pipe(sourcemaps.write(''))
+.pipe(notify("Create file: <%= file.relative %>!"))
+.pipe(gulp.dest('app/css'));
+});
+
+
+
 gulp.task('scripts', done => {
 	var jsFiles = [
 	'app/libs/plagins/jquery/jquery.min.js',
 //'app/libs/plagins/nicescroll/jquery.nicescroll.min.js',
 //'app/libs/plagins/jquery.PageScroll2id/jquery.PageScroll2id.min.js',
-'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
+//'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
 // 'app/libs/plagins/owlcarousel/owl.carousel.min.js',
-'app/libs/plagins/slick/slick.min.js',
+//'app/libs/plagins/slick/slick.min.js',
 'app/libs/common.js'
 // Always at the end
 ];
@@ -96,13 +124,14 @@ gulp.task('picture', done => {
 
 gulp.task('watch', done => {
 	gulp.watch("app/scss/**/*.scss", gulp.series('styles'));
+	gulp.watch("app/scss/**/*.scss", gulp.series('calculatestyles'));
 	gulp.watch("app/libs/**/*.js", gulp.series('scripts'));
 	gulp.watch("app/*.html", gulp.series('code'));
 	gulp.watch("app/img/**/*.*", gulp.series('picture'));
 	done();
 });
 
-gulp.task('default', gulp.parallel(['styles','scripts', 'watch', 'serve']));
+gulp.task('default', gulp.parallel(['styles', 'calculatestyles', 'scripts', 'watch', 'serve']));
 
 function cleaner() {
 	return del('dist/*');

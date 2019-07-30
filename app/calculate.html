@@ -4,11 +4,11 @@
 <head>
  <meta charset="utf-8" />
  <!-- <base href="/"> -->
- <title>Главная страница</title>
+ <title>Калькулятор</title>
  <meta name="description" content="" />
  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
- <link rel="stylesheet" href="css/libs.min.css" />
+ <link rel="stylesheet" href="css/calculate.min.css" />
  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
 </head>
 
@@ -82,18 +82,15 @@
    </div>
   </div>
  </header><!-- /header -->
-
-
-<main>
-
-	<section class="header_buner" style="background-image: url('../img/fon-header.jpg');">
+ <main>
+  <section class="header_buner" style="background-image: url('../img/fon-header.jpg');">
    <div class="container">
     <div class="row">
      <div class="header_buner_inn">
       <div class="header_buner_container">
        <h2> мы сертифицированные инженеры </h2>
        <h1> услуги по строительству <span>креатив и профессионализм </span> </h1>
-       <h3> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Родного пустился свой, буквоград своего! Предложения сих на берегу своих злых маленький меня города! </h3>
+       <h3> Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна Выполните строительсво бассейна </h3>
        <div class="header_buner_buttons">
         <a href="#" class="wellcome_link">узнать более</a>
         <a href="#" class="wellcome_link">больше о проекте</a>
@@ -103,6 +100,206 @@
     </div>
    </div>
   </section>
+  <section class="block">
+   <div class="container">
+    <h2 class="calculate_title">основные показатели</h2>
+    <div class="row">
+     <form id="calculate_forms">
+      <div class="calculate_form">
+       <div class="calculate_form_input">
+        <h3 class="calculate_form_title">размер бассейна, м</h3>
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <label for="dlina_pool">
+           <span>длина</span>
+           <input type="text" id="dlina_pool" class="dlina_pools">
+          </label>
+         </div>
+         <div class="calculate_size_item">
+          <label for="shirina_pool">
+           <span>ширина</span>
+           <input type="text" id="shirina_pool" class="dlina_pools">
+          </label>
+         </div>
+         <div class="calculate_size_item">
+          <label for="glubmin_pool">
+           <span>глубина мин</span>
+           <input type="text" id="glubmin_pool" class="dlina_pools">
+          </label>
+         </div>
+         <div class="calculate_size_item">
+          <label for="glubmax_pool">
+           <span>глубина макс</span>
+           <input type="text" id="glubmax_pool" class="dlina_pools">
+          </label>
+         </div>
+        </div>
+        <h3 class="calculate_form_title">переход глубины бассейна</h3>
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="radio" name="perehodglubiny" value="плавный" id="pluvbus" class="buss_inputin_input">
+          <label for="pluvbus" class="buss_inputin_label"><span>плавный</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="perehodglubiny" value="резкий" id="rezkybus" class="buss_inputin_input">
+          <label for="rezkybus" class="buss_inputin_label"><span>резкий</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="perehodglubiny" value="нет" id="notbus" class="buss_inputin_input" checked>
+          <label for="notbus" class="buss_inputin_label"><span>нет</span></label>
+         </div>
+        </div>
+       </div>
+       <div class="calculate_form_input">
+        <h3 class="calculate_form_title">тип бассейна</h3>
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="radio" name="typebusseyna" value="переливной" id="perelivbus" class="buss_inputin_input">
+          <label for="perelivbus" class="buss_inputin_label"><span>Переливной</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="typebusseyna" value="скимерный" id="skimernbus" class="buss_inputin_input" checked>
+          <label for="skimernbus" class="buss_inputin_label"><span>скимерный</span></label>
+         </div>
+        </div>
+        <h3 class="calculate_form_title">форма бассейна</h3>
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="radio" name="formabusseyna" value="сложная" id="mainbus" class="buss_inputin_input">
+          <label for="mainbus" class="buss_inputin_label"><span>сложная</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="formabusseyna" value="прямоугольная" id="prymougbus" class="buss_inputin_input">
+          <label for="prymougbus" class="buss_inputin_label"><span>прямоугольная</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="formabusseyna" value="круглая" id="wreelbus" class="buss_inputin_input" checked>
+          <label for="wreelbus" class="buss_inputin_label"><span>круглая</span></label>
+         </div>
+        </div>
+
+
+
+
+
+
+        <h3 class="calculate_form_title">лесница</h3>
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="checkbox" name="betlesnichi" value="Нержавеющая" id="nergaveka" class="buss_inputin_input">
+          <label for="nergaveka" class="buss_inputin_label"><span>Нержавеющая</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="betlesnichi" value="Бетонная" id="betonnastep" class="buss_inputin_input">
+          <label for="betonnastep" class="buss_inputin_label"><span>Бетонная</span></label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="container">
+       <h2 class="calculate_title">дополнительные показатели</h2>
+       <div class="row">
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnafiltr" value="автоматической обработкой воды" id="filtation" class="buss_inputin_input" checked disabled>
+          <label for="pluvbus" class="buss_inputin_label"><span>фильтрация</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="подсветка" id="podsvetka" class="buss_inputin_input">
+          <label for="podsvetka" class="buss_inputin_label"><span>подсветка</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="подогрев" id="podogravpool" class="buss_inputin_input">
+          <label for="podogravpool" class="buss_inputin_label"><span>подогрев</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="обработка" id="obrabotkawather" class="buss_inputin_input">
+          <label for="obrabotkawather" class="buss_inputin_label"><span>обработка</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="противоток" id="protivotok" class="buss_inputin_input">
+          <label for="protivotok" class="buss_inputin_label"><span>противоток</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="водопад" id="vodopad" class="buss_inputin_input">
+          <label for="vodopad" class="buss_inputin_label"><span>водопад</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="гидромассаж" id="gidromassage" class="buss_inputin_input">
+          <label for="gidromassage" class="buss_inputin_label"><span>гидромассаж</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="checkbox" name="dopolnitelnapodsv" value="аэромассаж" id="aeromasage" class="buss_inputin_input">
+          <label for="aeromasage" class="buss_inputin_label"><span>аэромассаж</span></label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="container">
+       <h2 class="calculate_title">отделка бассейна</h2>
+       <div class="row">
+        <div class="calculate_size">
+         <div class="calculate_size_item">
+          <input type="radio" name="typecalc" value="плитка" id="plitkainput" class="buss_inputin_input">
+          <label for="plitkainput" class="buss_inputin_label"><span>плитка</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="typecalc" value="мозайка" id="mozaikainput" class="buss_inputin_input">
+          <label for="mozaikainput" class="buss_inputin_label"><span>мозайка</span></label>
+         </div>
+         <div class="calculate_size_item">
+          <input type="radio" name="typecalc" value="полипропилен" id="poliproinput" class="buss_inputin_input">
+          <label for="poliproinput" class="buss_inputin_label"><span>полипропилен</span></label>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+
+
+  <form>
+
+<h2 class="rezult_block_title">ваш результат готов</h2>
+          <div class="rezult_block_descr">Вы выбрали:
+<ul>
+	<li>длина бассейна <span id="dlina_out">1</span> м</li>
+<li> ширина бассейна <span id="shirina_out">1</span> м,
+<li>минимальная глубина бассейна <span id="shirinamin_out">1</span> м,</li>
+<li>максимальная глубина бассейна <span id="shirinamax_out">1</span> м,</li>
+
+
+
+
+
+
+
+<li>бассейн <span id="typebus_out">скиммерный</span></li>
+<li>форма бассейна <span id="formbus_out">круглая</span></li>
+<li>переход глубины:<span id="perbusbass_out">нет</span></li>
+
+
+
+
+
+<li> бассейн следует оборудовать <span id="auto_obrwater">автоматической фильтрацией воды</span></li>
+<li> бассейн следует оборудовать <span id="betonlesnicha_out" >бетонной лесницей</span></li>
+<li> бассейн следует оборудовать <span id="nerglesnicha_out" >лесницей из нержавейки</span></li>
+
+
+
+
+
+
+
+
+
+
+<li> бассейн следует оборудовать <span id="filtrasia_out">системой фильтрацией</span></li>
+
+
+
+<li> бассейн следует оборудовать <span id="podogrevvody_out">подогревом воды</span>
+ <span id="podogrevvodycost_out"></span></li>
 
 
 
@@ -115,104 +312,187 @@
 
 
 
-</main>
-
-<footer>
-	<div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
-">
-		<div class="container">
-			<div class="row">
-				<div class="footer_top">
-					<div class="footer_top_one">
-						<h3>о компании</h3>
-						<div class="bottom_logo">
-							<img src="img/logo-construction.png" alt="логотип сайта">
-						</div>
-						<div class="footer_bottom_text">
-							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если приставка страну, большого.
-						</div>
-						<ul class="footer_bottom_social">
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-facebook" aria-hidden="true"></i></a>
-							</li>
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-twitter" aria-hidden="true"></i></a>
-							</li>
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-behance" aria-hidden="true"></i></a>
-							</li>
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-dribbble" aria-hidden="true"></i></a>
-							</li>
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-linkedin" aria-hidden="true"></i></a>
-							</li>
-							<li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-								<i class="fa fa-youtube" aria-hidden="true"></i></a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer_top_two">
-						<h3>страницы</h3>
-						<ul class="footer_pages_links">
-							<li> <a href="#">Наши услуги</a> </li>
-							<li> <a href="#">Наша команда</a> </li>
-							<li> <a href="#">Тех поддержка</a> </li>
-							<li> <a href="#">Политика приватности</a> </li>
-							<li> <a href="#">Карта сайта</a> </li>
-						</ul>
-					</div>
-					<div class="footer_top_three">
-						<h3>новые посты</h3>
-						<ul class="footer_latest_post">
-							<li class="clearfix">
-								<span class="footer_post_wrap">
-									<span class="footer_post_date">20 </span>
-									<span class="footer_post_month"> авг</span>
-								</span>
-								<a href="#">Далеко-далеко за словесными горами в стране</a>
-							</li>
-							<li class="clearfix">
-								<span class="footer_post_wrap">
-									<span class="footer_post_date">20 </span>
-									<span class="footer_post_month"> авг</span>
-								</span>
-								<a href="#"> Далеко-далеко за словесными горами в</a>
-							</li>
-							<li class="clearfix">
-								<span class="footer_post_wrap">
-									<span class="footer_post_date">20 </span>
-									<span class="footer_post_month"> авг</span>
-								</span>
-								<a href="#"> Далеко-далеко за </a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer_top_foure">
-						<h3>наши контакты</h3>
-						<ul class="footer_contacts">
-							<li> <span> 123 Новая линия, Москва, Россия</span> </li>
-							<li> <a href="mailto:joe@example.com">hello@exsemple.com</a></li>
-							<li>
-								<a href="tell:+3433434344">+3433434344</a>
-								<a href="tell:+3433434344">+3433434344</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer_bottom">
-		<ul>
-			<li> Copyright 2019</li>
-			<li> Верстка и посадка <a href="#"> Василенко Олег </a></li>
-		</ul>
-	</div>
-</footer>
 
 
+
+
+
+
+<li> бассейн следует оборудовать <span id="podvpodsvetka_out">подводным освещением</span></li>
+
+
+
+
+
+
+
+
+
+
+
+<li> бассейн следует отделать <span id="oblichovka_out" >плиткой</span> </li>
+
+
+
+<li>бассейн следует оборудовать <span id="ozonobrabotka_out">озоновой обработкой воды</span></li>
+<li>бассейн следует оборудовать <span id="protivot_out" >противотоком</span></li>
+<li>бассейн следует оборудовать <span id="vodopad_out" >водопадом</span></li>
+<li>бассейн следует оборудовать <span id="gidro_out">гидромассажем</span></li>
+<li>бассейн следует оборудовать <span id="aero_out">аэромассажем</span></li>
+</ul>
+          </div>
+
+          <div class="rezult_block_green" id="final_caundoun">
+            <div class="rezult_block_green_title">Предварительная стоимость вашего бассейна</div>
+            <div class="rezult_block_green_cost"> <span id="costing_proect" > 100 000</span> руб</div>
+     <input id="costing_peredat" type="hidden" name="costing_peredat" value="">
+            <div class="rezult_block_green_text">Внимание! Данная цена может изменится при выезде инжерена и
+            уточнения всех нюансов</div>
+
+          </div>
+          <div class="result_calcul_wraper clearfix">
+            <input id="author_popup" class="calcul_order" type="text" name="author" value="" placeholder="Ваше имя" required="required"  />
+            <input id="phone_calcul" class="calcul_order calcul_order_ziro" type="tel" name="phone" value="" required="required"  />
+            <input class="calcul_button" type="submit" value="Оставить заявку на бесплатную консультацию">
+          </div>
+          <div class="checkbox_box">
+            <div class="checkbox custom">
+              <input id="phone_headeroption" class="css-checkbox" type="checkbox" />
+              <label for="phone_headeroption" class="css-label">Я даю согласие на обработку своих персональных данных и ознакомлен с
+                <a href="#">политикой конфиденциальности</a>
+              </label>
+            </div>
+          </div>
+          <div class="our_spech">Наш специалист бесплатно ответит на все ваши вопросы
+          или же совершит выезд на объект для проведения всех необходимых замеров и уточнений. </div>
+
+
+
+
+
+
+
+
+ </form>
+
+
+
+
+
+
+
+
+    </div>
+   </div>
+  </section>
+ </main>
+ <footer>
+  <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
+		">
+   <div class="container">
+    <div class="row">
+     <div class="footer_top">
+      <div class="footer_top_one">
+       <h3>о компании</h3>
+       <div class="bottom_logo">
+        <img src="img/logo-construction.png" alt="логотип сайта">
+       </div>
+       <div class="footer_bottom_text">
+        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если приставка страну, большого.
+       </div>
+       <ul class="footer_bottom_social">
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-behance" aria-hidden="true"></i></a>
+        </li>
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        </li>
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+          <i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </li>
+       </ul>
+      </div>
+      <div class="footer_top_two">
+       <h3>страницы</h3>
+       <ul class="footer_pages_links">
+        <li> <a href="#">Наши услуги</a> </li>
+        <li> <a href="#">Наша команда</a> </li>
+        <li> <a href="#">Тех поддержка</a> </li>
+        <li> <a href="#">Политика приватности</a> </li>
+        <li> <a href="#">Карта сайта</a> </li>
+       </ul>
+      </div>
+      <div class="footer_top_three">
+       <h3>новые посты</h3>
+       <ul class="footer_latest_post">
+        <li class="clearfix">
+         <span class="footer_post_wrap">
+          <span class="footer_post_date">20 </span>
+          <span class="footer_post_month"> авг</span>
+         </span>
+         <a href="#">Далеко-далеко за словесными горами в стране</a>
+        </li>
+        <li class="clearfix">
+         <span class="footer_post_wrap">
+          <span class="footer_post_date">20 </span>
+          <span class="footer_post_month"> авг</span>
+         </span>
+         <a href="#"> Далеко-далеко за словесными горами в</a>
+        </li>
+        <li class="clearfix">
+         <span class="footer_post_wrap">
+          <span class="footer_post_date">20 </span>
+          <span class="footer_post_month"> авг</span>
+         </span>
+         <a href="#"> Далеко-далеко за </a>
+        </li>
+       </ul>
+      </div>
+      <div class="footer_top_foure">
+       <h3>наши контакты</h3>
+       <ul class="footer_contacts">
+        <li> <span> 123 Новая линия, Москва, Россия</span> </li>
+        <li> <a href="mailto:joe@example.com">hello@exsemple.com</a></li>
+        <li>
+         <a href="tell:+3433434344">+3433434344</a>
+         <a href="tell:+3433434344">+3433434344</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer_bottom">
+   <ul>
+    <li> Copyright 2019</li>
+    <li> Верстка и посадка <a href="#"> Василенко Олег </a></li>
+   </ul>
+  </div>
+ </footer>
  <script src="js/scripts.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+
+
+
+
 </body>
 
 </html>
