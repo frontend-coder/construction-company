@@ -15,6 +15,24 @@ $(document).ready(function () {
 		$('.hidden-mnu').hide("slow");
 	});
 
+
+$('.searchbutton').click(function(){
+  $(this).toggleClass('active');
+  $('.search-form').slideToggle();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//Ajax push mesege http://api.jquery.com/jquery.ajax/
 	$("form").submit(function() { //Change
 		var th = $(this);
