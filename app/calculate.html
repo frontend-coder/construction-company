@@ -112,25 +112,25 @@
          <div class="calculate_size_item">
           <label  for="dlina_pool">
            <span class="field_title">длина</span>
-           <input type="number" step="0.1" oninput="func(this)" id="dlina_pool" class="dlina_pools" placeholder="1.0">
+           <input type="text" id="dlina_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="shirina_pool">
            <span class="field_title">ширина</span>
-           <input type="number" step="0.1" oninput="func(this)" id="shirina_pool" class="dlina_pools" placeholder="1.0">
+           <input type="text" id="shirina_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="glubmin_pool">
            <span class="field_title">глубина мин</span>
-           <input type="number" step="0.1" oninput="func(this)" id="glubmin_pool" class="dlina_pools" placeholder="1.0">
+           <input type="text" id="glubmin_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="glubmax_pool">
            <span class="field_title">глубина макс</span>
-           <input type="number" step="0.1" oninput="func(this)" id="glubmax_pool" class="dlina_pools" placeholder="1.0">
+           <input type="text" id="glubmax_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
         </div>
@@ -278,6 +278,7 @@
        </div>
       </div>
      </form>
+
      <form>
       <h2 class="rezult_block_title">ваш результат готов</h2>
       <div class="rezult_block_descr">Вы выбрали:</div>
@@ -289,28 +290,28 @@
         <li>бассейн <span id="typebus_out">скимерный</span></li>
         <li>форма бассейна <span id="formbus_out">круглая</span></li>
         <li>переход глубины:<span id="perbusbass_out">нет</span></li>
-        <li> бассейн следует оборудовать <span id="auto_obrwater">автоматической фильтрацией воды</span></li>
-        <li> бассейн следует оборудовать <span id="betonlesnicha_out">бетонной лесницей</span>
+        <li>бассейн должен быть  <span id="auto_obrwater">автоматической фильтрацией воды</span></li>
+        <li> бассейн должен быть <span id="betonlesnicha_out">бетонной лесницей</span>
       <!--    <span id="betonlesnichaprice_out"></span> --></li>
-        <li> бассейн следует оборудовать <span id="nerglesnicha_out">без лесницы из нержавейки</span>
+        <li> бассейн должен быть <span id="nerglesnicha_out">без лесницы из нержавейки</span>
         <!--  <span id="nerglesnichaprice_out"></span> --></li>
-        <li> бассейн следует оборудовать <span id="filtrasia_out">системой фильтрацией</span>
+        <li> бассейн должен быть <span id="filtrasia_out">системой фильтрацией</span>
          <!-- <span id="filtrasiacost_out"></span> --></li>
-        <li> бассейн следует оборудовать <span id="podogrevvody_out">подогревом воды</span>
+        <li> бассейн должен быть <span id="podogrevvody_out">подогревом воды</span>
         <!--  <span id="podogrevvodycost_out"></span> --></li>
-        <li>бассейн следует оборудовать <span id="protivotokvody_out">противотоком</span>
+        <li>бассейн должен быть <span id="protivotokvody_out">противотоком</span>
    <!--       <span id="protivotokvodycost_out"></span> --></li>
-        <li>бассейн следует оборудовать <span id="gidro_out">гидромассажем</span>
+        <li>бассейн должен быть <span id="gidro_out">гидромассажем</span>
      <!--     <span id="gidrocost_out"></span> --></li>
-        <li> бассейн следует оборудовать <span id="podvpodsvetka_out">подводным освещением</span>
+        <li> бассейн должен быть <span id="podvpodsvetka_out">подводным освещением</span>
     <!--      <span id="podvpodsvetkacost_out"></span> --></li>
-        <li>бассейн следует оборудовать <span id="ozonobrabotka_out">озоновой обработкой воды</span>
+        <li>бассейн должен быть <span id="ozonobrabotka_out">озоновой обработкой воды</span>
       <!--    <span id="ozonobrabotkacost_out"></span> --></li>
-        <li>бассейн следует оборудовать <span id="vodopad_out">водопадом</span>
+        <li>бассейн должен быть <span id="vodopad_out">водопадом</span>
        <!--   <span id="vodopadcost_out"></span> --></li>
-        <li>бассейн следует оборудовать <span id="aero_out">аэромассажем</span>
+        <li>бассейн должен быть <span id="aero_out">аэромассажем</span>
  <!--         <span id="aerocost_out"></span> --></li>
-        <li> бассейн следует отделать <span id="oblichovka_out">плиткой</span>
+        <li> бассейн должен быть <span id="oblichovka_out">плиткой</span>
         <!--  <span id="oblichovkacost_out"></span> --></li>
        </ul>
 
@@ -322,24 +323,26 @@
         <span id="costing_proect3"> 100 000</span> руб
        </div>
        <input id="costing_peredat" type="hidden" name="costing_peredat" value="">
-       <div class="rezult_block_green_text">Внимание! Данная цена может изменится при выезде инжерена и
-        уточнения всех нюансов</div>
+       <div class="rezult_block_green_text">Внимание! Данная цена может изменится при выезде инжерена и уточнения всех нюансов</div>
       </div>
-      <div class="result_calcul_wraper clearfix">
+      <div class="result_calcul_wraper">
        <input id="author_popup" class="calcul_order" type="text" name="author" value="" placeholder="Ваше имя" required="required" />
-       <input id="phone_calcul" class="calcul_order calcul_order_ziro" type="tel" name="phone" value="" required="required" />
-       <input class="calcul_button" type="submit" value="Оставить заявку на бесплатную консультацию">
+       <input id="phone_calcul" class="calcul_order calcul_order_ziro" type="email" name="phone" value="" placeholder="Ваш email" required="required" />
+
+
+
+       <input class="calcul_button" type="submit" value="Оставить заявку на бесплатную консультацию" disabled >
       </div>
       <div class="checkbox_box">
-       <div class="checkbox custom">
-        <input id="phone_headeroption" class="css-checkbox" type="checkbox" />
-        <label for="phone_headeroption" class="css-label">Я даю согласие на обработку своих персональных данных и ознакомлен с
-         <a href="#">политикой конфиденциальности</a>
+
+        <label for="phone_headeroption" class="css-label checkbox-transform">
+        	<input id="phone_headeroption" class="css-checkbox checkbox__input" type="checkbox" />
+       <span class="checkbox__label"> Я даю согласие на обработку своих персональных данных и ознакомлен с <a href="#">политикой конфиденциальности</a></span>
         </label>
-       </div>
-      </div>
-      <div class="our_spech">Наш специалист бесплатно ответит на все ваши вопросы
+<div class="our_spech">Наш специалист бесплатно ответит на все ваши вопросы
        или же совершит выезд на объект для проведения всех необходимых замеров и уточнений. </div>
+      </div>
+
      </form>
     </div>
    </div>
@@ -439,14 +442,28 @@
   </div>
  </footer>
  <script src="js/scripts.min.js"></script>
- <script type="text/javascript">
- $('html').on('change', function() {
-  function func(e) {
-  if (e.value.indexOf(".") != '-1') {
-    e.value=e.value.substring(0, e.value.indexOf(".") + 2); // цифра 4, устанавливает количество цифр после запятой,
-                                                            //т.е. если 4, то максимум 3 цифры после запятой
-  }
+<script>
+
+
+//if($("#phone_headeroption").checked) {
+//         $('input.calcul_button').removeAttr('disabled');
+//}
+
+if ( $("#phone_headeroption").attr('checked', false)     {
+       $('.calcul_button').removeAttr('disabled');
 }
+
+
+</script>
+
+
+ <script type="text/javascript">
+
+
+
+
+ $('html').on('change', function() {
+
   var dlinaPool = document.getElementById("dlina_pool").value;
 
   if (dlinaPool == "") {
@@ -523,30 +540,34 @@
     document.getElementById("oblichovka_out").innerHTML = oblichovka;
 
     if (oblichovka === 'плитка') {
-     otdelkaPoolCost = 800;
+     otdelkaPoolCost = 2800;
     } else if (oblichovka === 'мозайка') {
      otdelkaPoolCost = 1800;
     } else if (oblichovka === 'полипропилен') {
-     otdelkaPoolCost = 2400;
+     otdelkaPoolCost = 900;
     }
  //   document.getElementById("oblichovkacost_out").innerHTML = otdelkaPoolCost;
    }
   }
-
   // вывод текста с бетонной и нержавеющей лесниц
-  let nergaveikaLwsnichaInput;
+
+ let nergaveikaLwsnichaInput;
   let nergaveikaLwsnichaOutput;
-  var nergaveikaLwsnichaPrice = 20000;
-  nergaveikaLwsnichaInput = document.getElementById('nergaveka');
+  var nergaveikaLwsnichaPrice ;
+
+nergaveikaLwsnichaInput = document.getElementById('nergaveka');
+
   if (nergaveikaLwsnichaInput.checked) {
-   nergaveikaLwsnichaOutput = 'нержавеющей лесницей';
+   nergaveikaLwsnichaOutput = 'c нержавеющей лесницей';
    document.getElementById("nerglesnicha_out").innerHTML = nergaveikaLwsnichaOutput;
-   document.getElementById("nerglesnichaprice_out").innerHTML = nergaveikaLwsnichaPrice;
+   var nergaveikaLwsnichaPrice = 20000;
+
+  } else {
    nergaveikaLwsnichaOutput = 'без нержавеющей лесницы';
-   nergaveikaLwsnichaPrice = 0;
    document.getElementById("nerglesnicha_out").innerHTML = nergaveikaLwsnichaOutput;
-   document.getElementById("nerglesnichaprice_out").innerHTML = nergaveikaLwsnichaPrice;
+   nergaveikaLwsnichaPrice = 0;
   }
+
 
   let betonLwsnichaInput;
   let betonLwsnichaOutput;
@@ -554,7 +575,7 @@
 
   betonLwsnichaInput = document.getElementById('betonnastep');
   if (betonLwsnichaInput.checked) {
-   betonLwsnichaOutput = 'бетонной лесницей';
+   betonLwsnichaOutput = 'c бетонной лесницей';
    document.getElementById("betonlesnicha_out").innerHTML = betonLwsnichaOutput;
    var betonLwsnichaPrice = 20000;
   // document.getElementById("betonlesnichaprice_out").innerHTML = betonLwsnichaPrice;
@@ -703,6 +724,62 @@
 
  });
  </script>
+
+<script>
+
+
+const input = document.querySelector("#dlina_pool");
+const pattern = /^\d+(\.?)\d*$/g;
+const allowedCodes = [8, 9, 27, 35, 36, 37, 38, 39, 46, 110, 188];
+input.addEventListener('input', onInput);
+function onInput(e) {
+	const value = this.value;
+	if( !(value.match(pattern) || allowedCodes.some(code => code === e.keyCode)) ) {
+		this.value = value.slice(0, -1);
+	}
+}
+
+const input1 = document.querySelector('#shirina_pool');
+const pattern1 = /^\d+(\.?)\d*$/g;
+const allowedCodes1 = [8, 9, 27, 35, 36, 37, 38, 39, 46, 110, 188];
+input1.addEventListener('input', onInput);
+function onInput(et) {
+	const value1 = this.value;
+	if( !(value1.match(pattern1) || allowedCodes.some(code => code === et.keyCode)) ) {
+		this.value = value1.slice(0, -1);
+	}
+}
+
+
+
+const input21 = document.querySelector('#glubmin_pool');
+const pattern21 = /^\d+(\.?)\d*$/g;
+const allowedCodes21 = [8, 9, 27, 35, 36, 37, 38, 39, 46, 110, 188];
+input21.addEventListener('input', onInput);
+function onInput(ep) {
+	const value21 = this.value;
+	if( !(value21.match(pattern21) || allowedCodes.some(code => code === ep.keyCode)) ) {
+		this.value = value21.slice(0, -1);
+	}
+}
+
+
+const input31 = document.querySelector('#glubmax_pool');
+const pattern31 = /^\d+(\.?)\d*$/g;
+const allowedCodes31 = [8, 9, 27, 35, 36, 37, 38, 39, 46, 110, 188];
+input31.addEventListener('input', onInput);
+function onInput(ek) {
+	const value31 = this.value;
+	if( !(value31.match(pattern31) || allowedCodes.some(code => code === ek.keyCode)) ) {
+		this.value = value31.slice(0, -1);
+	}
+}
+</script>
+
+
+
+
+
 </body>
 
 </html>

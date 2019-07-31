@@ -25,43 +25,11 @@ $('.searchbutton').click(function(){
 
 
 
-
-// function func(e) {
-//   if (e.value.indexOf(".") != '-1') {
-//     e.value=e.value.substring(0, e.value.indexOf(".") + 2); // цифра 4, устанавливает количество цифр после запятой,
-//                                                             //т.е. если 4, то максимум 3 цифры после запятой
-//   }
+// $('.dlina_pools').bind("change keyup input click", function() {
+// if (this.value.match(/[^0-9]/g)) {
+// this.value = this.value.replace(/[^0-9]/g, '');
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// });
 
 
 

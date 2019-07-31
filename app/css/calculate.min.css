@@ -3864,7 +3864,8 @@ ul {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.checkbox__label:after:hover, .checkbox__label:after:active {
+.checkbox__label:after:hover,
+.checkbox__label:after:active {
   border-color: green;
 }
 
@@ -3902,6 +3903,56 @@ ul {
   font-weight: 900;
   position: absolute;
   text-align: center;
+}
+
+.rezult_block_green_title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.rezult_block_green_cost {
+  text-align: center;
+  color: red;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.rezult_block_green_text {
+  margin-bottom: 30px;
+}
+
+.checkbox_box,
+.result_calcul_wraper {
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.checkbox_box {
+  margin-top: 20px;
+}
+
+.calcul_order {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-indent: 10px;
+  border: .15rem solid #000000;
+  outline: none;
+  background: #ffcb0f;
+}
+
+.calcul_order:focus {
+  border: .15rem solid #ffcb0f;
+}
+
+.calcul_button {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
 }
 
 .footer_bottom {
