@@ -110,88 +110,94 @@
         <h3 class="calculate_form_title">размер бассейна, м</h3>
         <div class="calculate_size">
          <div class="calculate_size_item">
-          <label for="dlina_pool">
-           <span>длина</span>
-           <input type="text" id="dlina_pool" class="dlina_pools">
+          <label  for="dlina_pool">
+           <span class="field_title">длина</span>
+           <input type="number" step="0.1" oninput="func(this)" id="dlina_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="shirina_pool">
-           <span>ширина</span>
-           <input type="text" id="shirina_pool" class="dlina_pools">
+           <span class="field_title">ширина</span>
+           <input type="number" step="0.1" oninput="func(this)" id="shirina_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="glubmin_pool">
-           <span>глубина мин</span>
-           <input type="text" id="glubmin_pool" class="dlina_pools">
+           <span class="field_title">глубина мин</span>
+           <input type="number" step="0.1" oninput="func(this)" id="glubmin_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
          <div class="calculate_size_item">
           <label for="glubmax_pool">
-           <span>глубина макс</span>
-           <input type="text" id="glubmax_pool" class="dlina_pools">
+           <span class="field_title">глубина макс</span>
+           <input type="number" step="0.1" oninput="func(this)" id="glubmax_pool" class="dlina_pools" placeholder="1.0">
           </label>
          </div>
         </div>
         <h3 class="calculate_form_title">переход глубины бассейна</h3>
         <div class="calculate_size">
          <div class="calculate_size_item">
-          <input type="radio" name="perehodglubiny" value="плавный" id="pluvbus" class="buss_inputin_input">
-          <label for="pluvbus" class="buss_inputin_label"><span>плавный</span></label>
+         	 <label for="pluvbus" class="buss_inputin_label checkbox-transform">
+          <input type="radio" name="perehodglubiny" value="плавный" id="pluvbus" class="buss_inputin_input checkbox__input">
+         <span class="checkbox__label">плавный</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="perehodglubiny" value="резкий" id="rezkybus" class="buss_inputin_input">
-          <label for="rezkybus" class="buss_inputin_label"><span>резкий</span></label>
+          <label for="rezkybus" class="buss_inputin_label checkbox-transform">
+          	<input type="radio" name="perehodglubiny" value="резкий" id="rezkybus" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">резкий</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="perehodglubiny" value="нет" id="notbus" class="buss_inputin_input" checked>
-          <label for="notbus" class="buss_inputin_label"><span>нет</span></label>
+          <label for="notbus" class="buss_inputin_label checkbox-transform">
+           <input type="radio" name="perehodglubiny" value="нет" id="notbus" class="buss_inputin_input checkbox__input" checked>
+         <span class="checkbox__label">нет</span></label>
          </div>
         </div>
        </div>
        <div class="calculate_form_input">
         <h3 class="calculate_form_title">тип бассейна</h3>
         <div class="calculate_size">
-         <div class="calculate_size_item">
-          <input type="radio" name="typebusseyna" value="переливной" id="perelivbus" class="buss_inputin_input">
-          <label for="perelivbus" class="buss_inputin_label"><span>Переливной</span></label>
+         <div class="calculate_size_item ">
+         	 <label for="perelivbus" class="buss_inputin_label checkbox-transform">
+          <input type="radio" name="typebusseyna" value="переливной" id="perelivbus" class="buss_inputin_input checkbox__input">
+         <span class="checkbox__label">Переливной</span></label>
          </div>
+
          <div class="calculate_size_item">
-          <input type="radio" name="typebusseyna" value="скимерный" id="skimernbus" class="buss_inputin_input" checked>
-          <label for="skimernbus" class="buss_inputin_label"><span>скимерный</span></label>
+         	<label for="skimernbus" class="buss_inputin_label checkbox-transform">
+          <input type="radio" name="typebusseyna" value="скимерный" id="skimernbus" class="buss_inputin_input checkbox__input" checked>
+          <span class="checkbox__label">скимерный</span></label>
          </div>
         </div>
         <h3 class="calculate_form_title">форма бассейна</h3>
         <div class="calculate_size">
          <div class="calculate_size_item">
-          <input type="radio" name="formabusseyna" value="сложная" id="mainbus" class="buss_inputin_input">
-          <label for="mainbus" class="buss_inputin_label"><span>сложная</span></label>
+
+          <label for="mainbus" class="buss_inputin_label checkbox-transform">
+          	<input type="radio" name="formabusseyna" value="сложная" id="mainbus" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">сложная</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="formabusseyna" value="прямоугольная" id="prymougbus" class="buss_inputin_input">
-          <label for="prymougbus" class="buss_inputin_label"><span>прямоугольная</span></label>
+         <label for="prymougbus" class="buss_inputin_label checkbox-transform">
+          <input type="radio" name="formabusseyna" value="прямоугольная" id="prymougbus" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">прямоугольная</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="formabusseyna" value="круглая" id="wreelbus" class="buss_inputin_input" checked>
-          <label for="wreelbus" class="buss_inputin_label"><span>круглая</span></label>
+            <label for="wreelbus" class="buss_inputin_label checkbox-transform">
+            	<input type="radio" name="formabusseyna" value="круглая" id="wreelbus" class="buss_inputin_input checkbox__input" checked>
+        <span class="checkbox__label">круглая</span></label>
          </div>
         </div>
-
-
-
-
-
-
         <h3 class="calculate_form_title">лесница</h3>
         <div class="calculate_size">
          <div class="calculate_size_item">
-          <input type="checkbox" name="betlesnichi" value="Нержавеющая" id="nergaveka" class="buss_inputin_input">
-          <label for="nergaveka" class="buss_inputin_label"><span>Нержавеющая</span></label>
+         	  <label for="nergaveka" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="betlesnichi" value="Нержавеющая" id="nergaveka" class="buss_inputin_input checkbox__input">
+        <span class="checkbox__label">Нержавеющая</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="checkbox" name="betlesnichi" value="Бетонная" id="betonnastep" class="buss_inputin_input">
-          <label for="betonnastep" class="buss_inputin_label"><span>Бетонная</span></label>
+         	<label for="betonnastep" class="checkbox-transform buss_inputin_label">
+          <input type="checkbox" name="betlesnichi" value="Бетонная" id="betonnastep" class="checkbox__input buss_inputin_input">
+          <span class="checkbox__label">Бетонная</span></label>
          </div>
         </div>
        </div>
@@ -200,37 +206,51 @@
        <h2 class="calculate_title">дополнительные показатели</h2>
        <div class="row">
         <div class="calculate_size">
+         <div class="calculate_size_item ">
+         <label for="filtation" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="dopolnitelnafiltr" value="автоматической обработкой воды" id="filtation" class="buss_inputin_input checkbox__input" checked disabled>
+          <span class="checkbox__label">фильтрация</span></label>
+         </div>
+
          <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnafiltr" value="автоматической обработкой воды" id="filtation" class="buss_inputin_input" checked disabled>
-          <label for="pluvbus" class="buss_inputin_label"><span>фильтрация</span></label>
+         	<label for="podsvetka" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="dopolnitelnapodsv" value="подсветка" id="podsvetka" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">подсветка</span>
+	      </label>
+         </div>
+
+         <div class="calculate_size_item">
+         <label for="podogravpool" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="dopolnitelnapodsv" value="подогрев" id="podogravpool" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">подогрев</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="подсветка" id="podsvetka" class="buss_inputin_input">
-          <label for="podsvetka" class="buss_inputin_label"><span>подсветка</span></label>
+         	 <label for="obrabotkawather" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="dopolnitelnapodsv" value="обработка" id="obrabotkawather" class="buss_inputin_input checkbox__input">
+         <span class="checkbox__label">обработка</span></label>
+         </div>
+
+         <div class="calculate_size_item">
+         	<label for="protivotok" class="buss_inputin_label checkbox-transform">
+          <input type="checkbox" name="dopolnitelnapodsv" value="противоток" id="protivotok" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">противоток</span></label>
+         </div>
+
+         <div class="calculate_size_item">
+           <label for="vodopad" class="buss_inputin_label checkbox-transform">
+           	<input type="checkbox" name="dopolnitelnapodsv" value="водопад" id="vodopad" class="buss_inputin_input checkbox__input">
+         <span class="checkbox__label">водопад</span></label>
+         </div>
+
+         <div class="calculate_size_item">
+           <label for="gidromassage" class="buss_inputin_label checkbox-transform">
+           	<input type="checkbox" name="dopolnitelnapodsv" value="гидромассаж" id="gidromassage" class="buss_inputin_input checkbox__input">
+         <span class="checkbox__label">гидромассаж</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="подогрев" id="podogravpool" class="buss_inputin_input">
-          <label for="podogravpool" class="buss_inputin_label"><span>подогрев</span></label>
-         </div>
-         <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="обработка" id="obrabotkawather" class="buss_inputin_input">
-          <label for="obrabotkawather" class="buss_inputin_label"><span>обработка</span></label>
-         </div>
-         <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="противоток" id="protivotok" class="buss_inputin_input">
-          <label for="protivotok" class="buss_inputin_label"><span>противоток</span></label>
-         </div>
-         <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="водопад" id="vodopad" class="buss_inputin_input">
-          <label for="vodopad" class="buss_inputin_label"><span>водопад</span></label>
-         </div>
-         <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="гидромассаж" id="gidromassage" class="buss_inputin_input">
-          <label for="gidromassage" class="buss_inputin_label"><span>гидромассаж</span></label>
-         </div>
-         <div class="calculate_size_item">
-          <input type="checkbox" name="dopolnitelnapodsv" value="аэромассаж" id="aeromasage" class="buss_inputin_input">
-          <label for="aeromasage" class="buss_inputin_label"><span>аэромассаж</span></label>
+          <label for="aeromasage" class="buss_inputin_label checkbox-transform">
+          	<input type="checkbox" name="dopolnitelnapodsv" value="аэромассаж" id="aeromasage" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">аэромассаж</span></label>
          </div>
         </div>
        </div>
@@ -240,155 +260,94 @@
        <div class="row">
         <div class="calculate_size">
          <div class="calculate_size_item">
-          <input type="radio" name="typecalc" value="плитка" id="plitkainput" class="buss_inputin_input">
-          <label for="plitkainput" class="buss_inputin_label"><span>плитка</span></label>
+           <label for="plitkainput" class="buss_inputin_label checkbox-transform">
+           	<input type="radio" name="typecalc" value="плитка" id="plitkainput" class="buss_inputin_input checkbox__input" checked>
+         <span  class="checkbox__label">плитка</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="typecalc" value="мозайка" id="mozaikainput" class="buss_inputin_input">
-          <label for="mozaikainput" class="buss_inputin_label"><span>мозайка</span></label>
+         <label for="mozaikainput" class="buss_inputin_label checkbox-transform">
+          <input type="radio" name="typecalc" value="мозайка" id="mozaikainput" class="buss_inputin_input checkbox__input">
+          <span  class="checkbox__label">мозайка</span></label>
          </div>
          <div class="calculate_size_item">
-          <input type="radio" name="typecalc" value="полипропилен" id="poliproinput" class="buss_inputin_input">
-          <label for="poliproinput" class="buss_inputin_label"><span>полипропилен</span></label>
+          <label for="poliproinput" class="buss_inputin_label checkbox-transform">
+          	<input type="radio" name="typecalc" value="полипропилен" id="poliproinput" class="buss_inputin_input checkbox__input">
+          <span class="checkbox__label">полипропилен</span></label>
          </div>
         </div>
        </div>
       </div>
      </form>
-
-
-  <form>
-
-<h2 class="rezult_block_title">ваш результат готов</h2>
-          <div class="rezult_block_descr">Вы выбрали:
-<ul>
-	<li>длина бассейна <span id="dlina_out">1</span> м</li>
-<li> ширина бассейна <span id="shirina_out">1</span> м,
-<li>минимальная глубина бассейна <span id="shirinamin_out">1</span> м,</li>
-<li>максимальная глубина бассейна <span id="shirinamax_out">1</span> м,</li>
-
-
-
-
-
-
-
-<li>бассейн <span id="typebus_out">скиммерный</span></li>
-<li>форма бассейна <span id="formbus_out">круглая</span></li>
-<li>переход глубины:<span id="perbusbass_out">нет</span></li>
-
-
-
-
-
-<li> бассейн следует оборудовать <span id="auto_obrwater">автоматической фильтрацией воды</span></li>
-<li> бассейн следует оборудовать <span id="betonlesnicha_out" >бетонной лесницей</span></li>
-<li> бассейн следует оборудовать <span id="nerglesnicha_out" >лесницей из нержавейки</span></li>
-
-
-
-
-
-
-
-
-
-
-<li> бассейн следует оборудовать <span id="filtrasia_out">системой фильтрацией</span></li>
-
-
-
-<li> бассейн следует оборудовать <span id="podogrevvody_out">подогревом воды</span>
- <span id="podogrevvodycost_out"></span></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li> бассейн следует оборудовать <span id="podvpodsvetka_out">подводным освещением</span></li>
-
-
-
-
-
-
-
-
-
-
-
-<li> бассейн следует отделать <span id="oblichovka_out" >плиткой</span> </li>
-
-
-
-<li>бассейн следует оборудовать <span id="ozonobrabotka_out">озоновой обработкой воды</span></li>
-<li>бассейн следует оборудовать <span id="protivot_out" >противотоком</span></li>
-<li>бассейн следует оборудовать <span id="vodopad_out" >водопадом</span></li>
-<li>бассейн следует оборудовать <span id="gidro_out">гидромассажем</span></li>
-<li>бассейн следует оборудовать <span id="aero_out">аэромассажем</span></li>
-</ul>
-          </div>
-
-          <div class="rezult_block_green" id="final_caundoun">
-            <div class="rezult_block_green_title">Предварительная стоимость вашего бассейна</div>
-            <div class="rezult_block_green_cost"> <span id="costing_proect" > 100 000</span> руб</div>
-     <input id="costing_peredat" type="hidden" name="costing_peredat" value="">
-            <div class="rezult_block_green_text">Внимание! Данная цена может изменится при выезде инжерена и
-            уточнения всех нюансов</div>
-
-          </div>
-          <div class="result_calcul_wraper clearfix">
-            <input id="author_popup" class="calcul_order" type="text" name="author" value="" placeholder="Ваше имя" required="required"  />
-            <input id="phone_calcul" class="calcul_order calcul_order_ziro" type="tel" name="phone" value="" required="required"  />
-            <input class="calcul_button" type="submit" value="Оставить заявку на бесплатную консультацию">
-          </div>
-          <div class="checkbox_box">
-            <div class="checkbox custom">
-              <input id="phone_headeroption" class="css-checkbox" type="checkbox" />
-              <label for="phone_headeroption" class="css-label">Я даю согласие на обработку своих персональных данных и ознакомлен с
-                <a href="#">политикой конфиденциальности</a>
-              </label>
-            </div>
-          </div>
-          <div class="our_spech">Наш специалист бесплатно ответит на все ваши вопросы
-          или же совершит выезд на объект для проведения всех необходимых замеров и уточнений. </div>
-
-
-
-
-
-
-
-
- </form>
-
-
-
-
-
-
-
-
+     <form>
+      <h2 class="rezult_block_title">ваш результат готов</h2>
+      <div class="rezult_block_descr">Вы выбрали:</div>
+       <ul class="rezult_list">
+        <li>длина бассейна <span id="dlina_out">1</span> м</li>
+        <li> ширина бассейна <span id="shirina_out">1</span> м,
+        <li>минимальная глубина бассейна <span id="shirinamin_out">1</span> м,</li>
+        <li>максимальная глубина бассейна <span id="shirinamax_out">1</span> м,</li>
+        <li>бассейн <span id="typebus_out">скимерный</span></li>
+        <li>форма бассейна <span id="formbus_out">круглая</span></li>
+        <li>переход глубины:<span id="perbusbass_out">нет</span></li>
+        <li> бассейн следует оборудовать <span id="auto_obrwater">автоматической фильтрацией воды</span></li>
+        <li> бассейн следует оборудовать <span id="betonlesnicha_out">бетонной лесницей</span>
+      <!--    <span id="betonlesnichaprice_out"></span> --></li>
+        <li> бассейн следует оборудовать <span id="nerglesnicha_out">без лесницы из нержавейки</span>
+        <!--  <span id="nerglesnichaprice_out"></span> --></li>
+        <li> бассейн следует оборудовать <span id="filtrasia_out">системой фильтрацией</span>
+         <!-- <span id="filtrasiacost_out"></span> --></li>
+        <li> бассейн следует оборудовать <span id="podogrevvody_out">подогревом воды</span>
+        <!--  <span id="podogrevvodycost_out"></span> --></li>
+        <li>бассейн следует оборудовать <span id="protivotokvody_out">противотоком</span>
+   <!--       <span id="protivotokvodycost_out"></span> --></li>
+        <li>бассейн следует оборудовать <span id="gidro_out">гидромассажем</span>
+     <!--     <span id="gidrocost_out"></span> --></li>
+        <li> бассейн следует оборудовать <span id="podvpodsvetka_out">подводным освещением</span>
+    <!--      <span id="podvpodsvetkacost_out"></span> --></li>
+        <li>бассейн следует оборудовать <span id="ozonobrabotka_out">озоновой обработкой воды</span>
+      <!--    <span id="ozonobrabotkacost_out"></span> --></li>
+        <li>бассейн следует оборудовать <span id="vodopad_out">водопадом</span>
+       <!--   <span id="vodopadcost_out"></span> --></li>
+        <li>бассейн следует оборудовать <span id="aero_out">аэромассажем</span>
+ <!--         <span id="aerocost_out"></span> --></li>
+        <li> бассейн следует отделать <span id="oblichovka_out">плиткой</span>
+        <!--  <span id="oblichovkacost_out"></span> --></li>
+       </ul>
+
+      <div class="rezult_block_green" id="final_caundoun">
+       <div class="rezult_block_green_title">Предварительная стоимость вашего бассейна</div>
+       <div class="rezult_block_green_cost">
+        <!-- 		 <span id="costing_proect" > 100 000</span> руб -->
+        <!-- 	<span id="costing_proect2" > 100 000</span> -->
+        <span id="costing_proect3"> 100 000</span> руб
+       </div>
+       <input id="costing_peredat" type="hidden" name="costing_peredat" value="">
+       <div class="rezult_block_green_text">Внимание! Данная цена может изменится при выезде инжерена и
+        уточнения всех нюансов</div>
+      </div>
+      <div class="result_calcul_wraper clearfix">
+       <input id="author_popup" class="calcul_order" type="text" name="author" value="" placeholder="Ваше имя" required="required" />
+       <input id="phone_calcul" class="calcul_order calcul_order_ziro" type="tel" name="phone" value="" required="required" />
+       <input class="calcul_button" type="submit" value="Оставить заявку на бесплатную консультацию">
+      </div>
+      <div class="checkbox_box">
+       <div class="checkbox custom">
+        <input id="phone_headeroption" class="css-checkbox" type="checkbox" />
+        <label for="phone_headeroption" class="css-label">Я даю согласие на обработку своих персональных данных и ознакомлен с
+         <a href="#">политикой конфиденциальности</a>
+        </label>
+       </div>
+      </div>
+      <div class="our_spech">Наш специалист бесплатно ответит на все ваши вопросы
+       или же совершит выезд на объект для проведения всех необходимых замеров и уточнений. </div>
+     </form>
     </div>
    </div>
   </section>
  </main>
  <footer>
   <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
-		">
+														">
    <div class="container">
     <div class="row">
      <div class="footer_top">
@@ -480,19 +439,270 @@
   </div>
  </footer>
  <script src="js/scripts.min.js"></script>
+ <script type="text/javascript">
+ $('html').on('change', function() {
+  function func(e) {
+  if (e.value.indexOf(".") != '-1') {
+    e.value=e.value.substring(0, e.value.indexOf(".") + 2); // цифра 4, устанавливает количество цифр после запятой,
+                                                            //т.е. если 4, то максимум 3 цифры после запятой
+  }
+}
+  var dlinaPool = document.getElementById("dlina_pool").value;
+
+  if (dlinaPool == "") {
+   dlinaPool = 1;
+  }
+  document.getElementById("dlina_out").innerHTML = dlinaPool;
+
+  var shirinaPool = document.getElementById("shirina_pool").value;
+  if (shirinaPool == "") {
+   shirinaPool = 1;
+  }
+  document.getElementById("shirina_out").innerHTML = shirinaPool;
+
+  var glubMinPool = document.getElementById("glubmin_pool").value;
+  if (glubMinPool == "") {
+   glubMinPool = 1;
+  }
+  document.getElementById("shirinamin_out").innerHTML = glubMinPool;
+
+  var glubMaxPool = document.getElementById("glubmax_pool").value;
+  if (glubMaxPool == "") {
+   glubMaxPool = 1;
+  }
+  document.getElementById("shirinamax_out").innerHTML = glubMaxPool;
+
+  let radios = 'нет';
+  radios = document.getElementsByName("perehodglubiny");
+  for (let i = 0; i < radios.length; i++) {
+   if (radios[i].checked) {
+    let PerGlub = (radios[i].value);
+    document.getElementById("perbusbass_out").innerHTML = PerGlub;
+   }
+  }
+
+  let radiostype = 'скимерный';
+  var skimernyIndex;
+  radiostype = document.getElementsByName("typebusseyna");
+  for (let it = 0; it < radiostype.length; it++) {
+   if (radiostype[it].checked) {
+    var typePool = (radiostype[it].value);
+    document.getElementById("typebus_out").innerHTML = typePool;
+
+    if (typePool === 'скимерный') {
+     skimernyIndex = 1;
+    } else if (typePool == 'переливной') {
+     skimernyIndex = 1.3;
+    }
+   }
+  }
+
+  let radiosperexod = 'круглая';
+  var formaBaseins;
+  radiosperexod = document.getElementsByName("formabusseyna");
+  for (let ip = 0; ip < radiosperexod.length; ip++) {
+   if (radiosperexod[ip].checked) {
+    let perex = (radiosperexod[ip].value);
+    document.getElementById("formbus_out").innerHTML = perex;
+    if (perex === 'круглая') {
+     formaBaseins = 1.4;
+    } else if (perex == 'прямоугольная') {
+     formaBaseins = 1.0;
+    } else if (perex == 'сложная') {
+     formaBaseins = 1.7;
+    }
+   }
+  }
+
+  let otdelkaPool = 'плиткой';
+  var otdelkaPoolCost;
+  otdelkaPool = document.getElementsByName("typecalc");
+  for (let imat = 0; imat < otdelkaPool.length; imat++) {
+   if (otdelkaPool[imat].checked) {
+    let oblichovka = (otdelkaPool[imat].value);
+    document.getElementById("oblichovka_out").innerHTML = oblichovka;
+
+    if (oblichovka === 'плитка') {
+     otdelkaPoolCost = 800;
+    } else if (oblichovka === 'мозайка') {
+     otdelkaPoolCost = 1800;
+    } else if (oblichovka === 'полипропилен') {
+     otdelkaPoolCost = 2400;
+    }
+ //   document.getElementById("oblichovkacost_out").innerHTML = otdelkaPoolCost;
+   }
+  }
+
+  // вывод текста с бетонной и нержавеющей лесниц
+  let nergaveikaLwsnichaInput;
+  let nergaveikaLwsnichaOutput;
+  var nergaveikaLwsnichaPrice = 20000;
+  nergaveikaLwsnichaInput = document.getElementById('nergaveka');
+  if (nergaveikaLwsnichaInput.checked) {
+   nergaveikaLwsnichaOutput = 'нержавеющей лесницей';
+   document.getElementById("nerglesnicha_out").innerHTML = nergaveikaLwsnichaOutput;
+   document.getElementById("nerglesnichaprice_out").innerHTML = nergaveikaLwsnichaPrice;
+   nergaveikaLwsnichaOutput = 'без нержавеющей лесницы';
+   nergaveikaLwsnichaPrice = 0;
+   document.getElementById("nerglesnicha_out").innerHTML = nergaveikaLwsnichaOutput;
+   document.getElementById("nerglesnichaprice_out").innerHTML = nergaveikaLwsnichaPrice;
+  }
+
+  let betonLwsnichaInput;
+  let betonLwsnichaOutput;
+  var betonLwsnichaPrice;
+
+  betonLwsnichaInput = document.getElementById('betonnastep');
+  if (betonLwsnichaInput.checked) {
+   betonLwsnichaOutput = 'бетонной лесницей';
+   document.getElementById("betonlesnicha_out").innerHTML = betonLwsnichaOutput;
+   var betonLwsnichaPrice = 20000;
+  // document.getElementById("betonlesnichaprice_out").innerHTML = betonLwsnichaPrice;
+  } else {
+   betonLwsnichaOutput = 'без бетонной лесницы';
+   document.getElementById("betonlesnicha_out").innerHTML = betonLwsnichaOutput;
+   betonLwsnichaPrice = 0;
+//   document.getElementById("betonlesnichaprice_out").innerHTML = betonLwsnichaPrice;
+  }
+
+  // вывод текста ФИЛЬТРАЦИЕЙ
+  let filtrasiaVodyPool;
+  let filtrasiaVodyPoolOutput;
+  var filtrasiaPoolCost;
+  filtrasiaVodyPool = document.getElementById('filtation');
+  if (filtrasiaVodyPool.checked) {
+   filtrasiaVodyPoolOutput = 'c фильтрацией воды бассейна';
+   filtrasiaPoolCost = 0;
+  } else {
+   filtrasiaVodyPoolOutput = 'без фильтрации воды бассейна';
+   filtrasiaPoolCost = 0;
+  };
+  document.getElementById("filtrasia_out").innerHTML = filtrasiaVodyPoolOutput;
+ // document.getElementById("filtrasiacost_out").innerHTML = filtrasiaPoolCost;
+
+  // вывод текста ПОДОГРЕВ
+  let podogrevVodyPool;
+  let podogrevVodyPoolOutput;
+  var PodogrevPoolCost;
+  podogrevVodyPool = document.getElementById('podogravpool');
+  if (podogrevVodyPool.checked) {
+   podogrevVodyPoolOutput = 'подогрев воды бассейна';
+   PodogrevPoolCost = 11897;
+  } else {
+   podogrevVodyPoolOutput = 'без подогрева воды бассейна';
+   PodogrevPoolCost = 0;
+  };
+  document.getElementById("podogrevvody_out").innerHTML = podogrevVodyPoolOutput;
+  //document.getElementById("podogrevvodycost_out").innerHTML = PodogrevPoolCost;
+
+  // вывод текста ПРОТИВОТОК
+  let protivotokVodyPool;
+  let protivotokVodyPoolOutput;
+  var protivotokVodyPoolCost;
+  protivotokVodyPool = document.getElementById('protivotok');
+  if (protivotokVodyPool.checked) {
+   protivotokVodyPoolOutput = 'противотоком воды бассейна';
+   protivotokVodyPoolCost = 10000;
+  } else {
+   protivotokVodyPoolOutput = 'без противотока воды бассейна';
+   protivotokVodyPoolCost = 0;
+  };
+  document.getElementById("protivotokvody_out").innerHTML = protivotokVodyPoolOutput;
+  //document.getElementById("protivotokvodycost_out").innerHTML = protivotokVodyPoolCost;
+
+  // вывод текста ГИДРОМАСАЖ
+  let gidromasagePool;
+  let gidromasagePoolOutput;
+  var gidromasagePoolCost;
+  gidromasagePool = document.getElementById('gidromassage');
+  if (gidromasagePool.checked) {
+   gidromasagePoolOutput = 'гидромассажем';
+   gidromasagePoolCost = 5000;
+  } else {
+   gidromasagePoolOutput = 'без гидромассажа';
+   gidromasagePoolCost = 0;
+  };
+  document.getElementById("gidro_out").innerHTML = gidromasagePoolOutput;
+  //document.getElementById("gidrocost_out").innerHTML = gidromasagePoolCost;
+
+  // вывод текста ПОДСВЕТКА
+  let podvpodsvetkaPool;
+  let podvpodsvetkaPoolOutput;
+  var podvpodsvetkaPoolCost;
+  podvpodsvetkaPool = document.getElementById('podsvetka');
+  if (podvpodsvetkaPool.checked) {
+   podvpodsvetkaPoolOutput = 'подводной подсветкой воды';
+   podvpodsvetkaPoolCost = 5000;
+  } else {
+   podvpodsvetkaPoolOutput = 'без подводной подсветкой воды';
+   podvpodsvetkaPoolCost = 0;
+  };
+  document.getElementById("podvpodsvetka_out").innerHTML = podvpodsvetkaPoolOutput;
+ // document.getElementById("podvpodsvetkacost_out").innerHTML = podvpodsvetkaPoolCost;
+
+  // вывод текста ОЗОНОВОЙ ОБРАБОТКОЙ ВОДЫ
+  let ozonovaObrabotkaPool;
+  let ozonovaObrabotkaPoolOutput;
+  var ozonovaObrabotkaPoolCost;
+  ozonovaObrabotkaPool = document.getElementById('obrabotkawather');
+  if (ozonovaObrabotkaPool.checked) {
+   ozonovaObrabotkaPoolOutput = 'озоновой обработкой воды';
+   ozonovaObrabotkaPoolCost = 8547;
+  } else {
+   ozonovaObrabotkaPoolOutput = 'без озоновой обработкой воды';
+   ozonovaObrabotkaPoolCost = 0;
+  };
+  document.getElementById("ozonobrabotka_out").innerHTML = ozonovaObrabotkaPoolOutput;
+//  document.getElementById("ozonobrabotkacost_out").innerHTML = ozonovaObrabotkaPoolCost;
+
+  // вывод текста ВОДОПАДОМ
+  let vodopadPool;
+  let vodopadPoolOutput;
+  var vodopadPoolCost;
+  vodopadPool = document.getElementById('vodopad');
+  if (vodopadPool.checked) {
+   vodopadPoolOutput = 'водопадом бассейна';
+   vodopadPoolCost = 15580;
+  } else {
+   vodopadPoolOutput = 'без водопада бассейна';
+   vodopadPoolCost = 0;
+  };
+  document.getElementById("vodopad_out").innerHTML = vodopadPoolOutput;
+//  document.getElementById("vodopadcost_out").innerHTML = vodopadPoolCost;
+
+  // вывод текста ФЭРОМАССЖЕМ
+  let aeromasagePool;
+  let aeromasagePoolOutput;
+  var aeromasagePoolCost;
+  aeromasagePool = document.getElementById('aeromasage');
+  if (aeromasagePool.checked) {
+   aeromasagePoolOutput = 'аэромассажем';
+   aeromasagePoolCost = 15580;
+  } else {
+   aeromasagePoolOutput = 'без аэромассажа';
+   aeromasagePoolCost = 0;
+  };
+  document.getElementById("aero_out").innerHTML = aeromasagePoolOutput;
+ // document.getElementById("aerocost_out").innerHTML = aeromasagePoolCost;
 
 
-<script type="text/javascript">
+  let perimetrPool = (((2 * (glubMinPool * dlinaPool)) + (2 * (glubMinPool * shirinaPool)) + (dlinaPool * shirinaPool)) * skimernyIndex) * formaBaseins;
 
+  let perimetrPoolCost = perimetrPool * otdelkaPoolCost;
 
-</script>
+  let costDopolOborudovania = nergaveikaLwsnichaPrice + betonLwsnichaPrice + filtrasiaPoolCost + PodogrevPoolCost + protivotokVodyPoolCost + gidromasagePoolCost + podvpodsvetkaPoolCost + ozonovaObrabotkaPoolCost + vodopadPoolCost + aeromasagePoolCost;
 
+  let allResultPrice = perimetrPoolCost + costDopolOborudovania;
 
+  // document.getElementById("costing_proect").innerHTML = perimetrPoolCost;
+  // document.getElementById("costing_proect2").innerHTML = costDopolOborudovania;
 
+  allResultPrice = Math.ceil(allResultPrice);
+  allResultPrice = allResultPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  document.getElementById("costing_proect3").innerHTML = allResultPrice;
 
-
-
-
+ });
+ </script>
 </body>
 
 </html>

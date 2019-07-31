@@ -3790,14 +3790,24 @@ ul {
 }
 
 .calculate_size_item label span {
-  display: block;
-  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
-.dlina_pool {
+.field_title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dlina_pools {
   height: 40px;
   text-indent: 10px;
+  border: .15rem solid #000000;
+  outline: none;
+  background: #ffcb0f;
+}
+
+.dlina_pools:focus {
+  border: .15rem solid #ffcb0f;
 }
 
 .calculate_title {
@@ -3805,6 +3815,93 @@ ul {
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+
+.checkbox__label:before {
+  content: ' ';
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffcb0f;
+}
+
+.checkbox__label:after {
+  content: ' ';
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: .15rem solid #000000;
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: #fff200; */
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+}
+
+.checkbox__input:checked ~ .checkbox__label:after {
+  border-top-style: none;
+  border-right-style: none;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  height: 1.0rem;
+  border-color: green;
+}
+
+.checkbox-transform {
+  position: relative;
+  font-size: 1.3em;
+  color: #666;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.checkbox__label:after:hover, .checkbox__label:after:active {
+  border-color: green;
+}
+
+.checkbox__label {
+  margin-left: 1.5rem;
+  line-height: .75;
+}
+
+.rezult_block_title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.rezult_block_descr {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.rezult_list {
+  padding: 0;
+}
+
+.rezult_list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.rezult_list li span {
+  width: 400px;
+  top: 0;
+  right: 0;
+  font-weight: 900;
+  position: absolute;
+  text-align: center;
 }
 
 .footer_bottom {
