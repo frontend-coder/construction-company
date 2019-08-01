@@ -3645,6 +3645,54 @@ ul {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 1280px) {
+  /* делать это разрешение */
+}
+
+/* первое разрешение под казачика */
+@media only screen and (max-width: 1024px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 960px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 800px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 768px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 640px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 600px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 480px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 320px) {
+  /* делать это разрешение */
+}
+
+/*==========  Mobile First  ==========*/
+/*
+// Small devices (landscape phones, 576px and up) */
+/*
+// Medium devices (tablets, 768px and up)
+ */
+/*
+// Large devices (desktops, 992px and up)
+ */
+/*
+// Extra large devices (large desktops, 1200px and up) */
 .block {
   padding: 50px 0;
 }
@@ -4317,8 +4365,7 @@ ul {
   position: relative;
 }
 
-/*==========  Desktop First  ==========*/
-@media screen and (max-width: 1080px) {
+@media only screen and (max-width: 1280px) {
   /* делать это разрешение */
 }
 
@@ -4327,29 +4374,31 @@ ul {
   /* делать это разрешение */
 }
 
-@media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important;
-  }
+@media only screen and (max-width: 960px) {
+  /* делать это разрешение */
 }
 
-/* end  (max-width: 768px) */
+@media only screen and (max-width: 800px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 768px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 640px) {
+  /* делать это разрешение */
+}
+
 @media only screen and (max-width: 600px) {
   /* делать это разрешение */
 }
 
 @media only screen and (max-width: 480px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 320px) {
   /* делать это разрешение */
 }
 

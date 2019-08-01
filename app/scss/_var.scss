@@ -3,8 +3,8 @@
 $body_fontsize: 16px;
 $body_lineheight: 1.42;
 
-
-
+// @include trans;
+$color_link_comenk :#666;
 $placeholder_color_text: #adadad;
 $white_color: #fff;
 $default-font: "OpenSansRegular", sans-serif;
@@ -15,7 +15,7 @@ $top_line_color:#ffcb0f;
 
 
 // эти переменные временные по внутренему контенту
-
+$color_border:#cfd3d5;
 
 $color_font_gray: #6c6c6c;
 $color_font_title:#222222;
