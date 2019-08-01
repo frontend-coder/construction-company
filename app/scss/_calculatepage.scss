@@ -546,9 +546,7 @@
 }
 
 .post_box .post_item {
-
 	margin-bottom: 30px;
-
 }
 
 .post_box .post_item .post-thumb {
@@ -556,7 +554,7 @@
 	float: left;
 	width: 40%;
 }
-
+.post_box .post_item .single-thumb a img,
 .post_box .post_item .post-thumb a img {
 	display: block;
 	width: 100%;
@@ -569,15 +567,78 @@
 	padding-left: 10px;
 }
 
+.post_box .post_item .single_text {
+	margin-top: 20px;
+}
+.post_box .post_item .single_text .date_publish {
+text-align: right;
+}
+
+.post_box .post_item .single_text h2,
 .post_box .post_item .post_text h2 {
 	@include font-size(25px);
 	line-height: 1.2;
 	margin-bottom: 20px;
 }
-
+.post_box .post_item .single_text h2 {
+	text-transform: uppercase;
+	line-height: 1.8;
+}
+.post_box .post_item .single_text p,
 .post_box .post_item .post_text p {
 	margin-bottom: 20px;
 }
+
+.post_box .post_item .single_text img {
+display: block;
+max-width: 100%;
+height: auto;
+margin:20px auto;
+}
+
+.post_box .post_item .single_text blockquote {
+border-left: 3px solid $top_line_color;
+padding-left: 20px;
+margin-left: 10px;
+}
+
+
+.post_box .post_item .single_text a,
+.post_box .post_item .post_text a {
+	color:#666;
+	 @include trans;
+}
+.post_box .post_item .single_text a:hover,
+.post_box .post_item .post_text a:hover {
+	color: darken( #666, 10%);
+	text-decoration: none;
+}
+
+.post_box .post_item .single_text .video{
+	margin-left: 20px;
+	margin-right: 20px;
+position:relative;
+padding-bottom:56.25%;
+/*пропорции видео 16:9 */
+//padding-top:;
+ height:0;
+ text-align: center;
+}
+
+.post_box .post_item .single_text .video iframe {
+position:absolute;
+display: inline-block;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+
+
+
+
+
 
 .post_box .post_item .post_text .read_more {
 	text-transform: uppercase;
