@@ -1,45 +1,64 @@
 $(document).ready(function () {
-	// 	$("body").niceScroll({
-	// horizrailenabled:false
-	// });
-	// вверхнее красиво-вращающееся меню
-	// 1 и 2 строка это анимация крестика
-	//3 строка - слайдер вниз меню
-	//слайдер вниз меню отвечает за работу мобильного меню к переносу
-	$(".toggle-mnu").click(function () {
-		$(this).toggleClass("on");
-		$(".top-menu").slideToggle();
-		return false;
+
+	var $toggleButton = $('.toggle-button'),
+    	$menuWrap = $('.menu-wrap'),
+  $sidebarArrow = $('.sidebar-menu-arrow');
+
+	// Hamburger button
+
+	$toggleButton.on('click', function() {
+		$(this).toggleClass('button-open');
+		$menuWrap.toggleClass('menu-show');
 	});
-	$('body, .top-menu ul li a').click(function () {
-		$('.hidden-mnu').hide("slow");
+
+	// Sidebar navigation arrows
+
+	$sidebarArrow.click(function() {
+		$(this).next().slideToggle(300);
 	});
+
+
+
+
+
+var nav = $('.top_line_menu');
+var navburger = $('.toggle-button');
+var bodyTegr = $('body');
+
+	$(navburger).on('click', function () {
+	$(this).toggleClass('f-burger');
+		$(bodyTegr).toggleClass('body_fixed');
+		nav.toggleClass('toplinehiden');
+	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 300) {
+		nav.addClass("f-nav").slideDown( "slow");
+		navburger.addClass("f-navburger");
+
+		} else {
+			nav.removeClass("f-nav");
+		navburger.removeClass("f-navburger");
+		}
+	});
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 300) {
+
+
+		} else {
+
+		}
+	});
+
+
+
+
 
 
 $('.searchbutton').click(function(){
   $(this).toggleClass('active');
   $('.search-form').slideToggle();
 });
-
-
-
-
-
-// $('.dlina_pools').bind("change keyup input click", function() {
-// if (this.value.match(/[^0-9]/g)) {
-// this.value = this.value.replace(/[^0-9]/g, '');
-// }
-// });
-
-
-
-
-
-
-
-
-
-
 
 
 

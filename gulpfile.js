@@ -45,7 +45,7 @@ gulp.task('styles', () => {
 //.pipe(cleancss( {level: { 2: { specialComments: 0 } } })) // Opt., comment out when debugging
 .pipe(filesize()).on('error', gulpUtil.log)
 .pipe(sourcemaps.write(''))
-.pipe(notify("Create file: <%= file.relative %>!"))
+//.pipe(notify("Create file: <%= file.relative %>!"))
 .pipe(gulp.dest('app/css'));
 });
 

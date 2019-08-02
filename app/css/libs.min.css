@@ -343,6 +343,12 @@ body {
   }
 }
 
+@media (min-width: 960px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
 @media (min-width: 980px) {
   .container {
     max-width: 960px;
@@ -3376,6 +3382,10 @@ ul {
   list-style: none;
 }
 
+#header {
+  position: relative;
+}
+
 .top_line_header {
   background-color: #ffcb0f;
   padding: 12px 0;
@@ -3429,6 +3439,13 @@ ul {
 
 .top_line_menu {
   background-color: #222533;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 .row_line_menu {
@@ -3645,6 +3662,234 @@ ul {
   color: #ffffff;
 }
 
+.menu-wrap {
+  background-color: #222533;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: -100%;
+  font-size: 1em;
+  font-weight: 700;
+  overflow: auto;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 10;
+}
+
+.menu-show {
+  left: 0;
+  -webkit-box-shadow: 4px 2px 15px 1px #B9ADAD;
+          box-shadow: 4px 2px 15px 1px #B9ADAD;
+}
+
+.menu-sidebar {
+  margin: 75px 0 80px 10px;
+  position: relative;
+  top: 70px;
+}
+
+.menu-sidebar li {
+  padding: 18px 22px 0;
+}
+
+.menu-sidebar li > a {
+  color: #f3f3f3;
+  font-size: 1.18em;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-sidebar li ul li > a::after,
+.menu-sidebar li > a::after {
+  content: "";
+  display: block;
+  height: 0.15em;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50.3%, transparent), color-stop(50.3%, #FFFA3B));
+  background-image: -o-linear-gradient(left, transparent 50.3%, #FFFA3B 50.3%);
+  background-image: linear-gradient(to right, transparent 50.3%, #FFFA3B 50.3%);
+  -webkit-transition: background-position .2s .1s ease-out;
+  -o-transition: background-position .2s .1s ease-out;
+  transition: background-position .2s .1s ease-out;
+  background-size: 200% auto;
+}
+
+.menu-sidebar li > a:hover::after {
+  background-position: -100% 0;
+}
+
+.menu-sidebar .menu-item-has-children {
+  position: relative;
+}
+
+.menu-sidebar .menu-item-has-children .sub-menu {
+  display: none;
+}
+
+.sub-menu {
+  list-style: none;
+}
+
+.sidebar-menu-arrow::after {
+  content: "\f107";
+  font-family: 'FontAwesome';
+  padding: 10px;
+  color: #FFFA3B;
+  position: relative;
+}
+
+.sidebar-menu-arrow:hover::after {
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar-menu-arrow:active::after {
+  top: 2px;
+}
+
+/*Hamburger Button*/
+.toggle-button:hover {
+  cursor: pointer;
+}
+
+.toggle-button .menu-bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.toggle-button .menu-bar-top {
+  border: 4px solid #555;
+  border-bottom: none;
+  top: 0;
+}
+
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: #555;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px;
+}
+
+.toggle-button .menu-bar-bottom {
+  border: 4px solid #555;
+  border-top: none;
+  top: 22px;
+}
+
+.button-open {
+  top: 77px;
+}
+
+.button-open .menu-bar-top {
+  border-color: #fff;
+  -webkit-transform: rotate(45deg) translate(8px, 8px);
+      -ms-transform: rotate(45deg) translate(8px, 8px);
+          transform: rotate(45deg) translate(8px, 8px);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.button-open .menu-bar-middle {
+  background-color: #fff;
+  -webkit-transform: translate(230px);
+      -ms-transform: translate(230px);
+          transform: translate(230px);
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+  transition: .1s ease-in;
+  opacity: 0;
+}
+
+.button-open .menu-bar-bottom {
+  border-color: #fff;
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+      -ms-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.toggle-button {
+  position: absolute;
+  width: 44px;
+  height: 40px;
+  top: 30px;
+  right: 40px;
+  padding: 4px;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 15;
+}
+
+.toggle-button .menu-bar-top {
+  border: 2px solid #ffcb0f;
+}
+
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: #ffcb0f;
+}
+
+.toggle-button .menu-bar-bottom {
+  border: 2px solid #ffcb0f;
+}
+
+.toggle-button {
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.toggle-button {
+  top: 80px;
+}
+
+.f-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.f-navburger {
+  top: 32px;
+  position: fixed;
+}
+
+.f-burger {
+  position: fixed;
+  top: 81px;
+}
+
+.body_fixed {
+  overflow: hidden;
+}
+
+.nav_burger_pos {
+  top: 34px;
+}
+
+.toplinehiden {
+  top: -200px;
+}
+
 @media only screen and (max-width: 1280px) {
   /* делать это разрешение */
 }
@@ -3656,10 +3901,45 @@ ul {
 
 @media only screen and (max-width: 960px) {
   /* делать это разрешение */
+  .top_menu {
+    display: none;
+  }
+  .top_contacts_items {
+    font-size: 0.9rem;
+    padding-right: 20px;
+  }
+  .row_line_menu {
+    padding-right: 70px;
+  }
+  .toggle-button {
+    display: block;
+  }
+  .top_line_menu {
+    z-index: 14;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   /* делать это разрешение */
+  .block_menu_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .footer_top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .footer_top_foure,
+  .footer_top_three,
+  .footer_top_one,
+  .footer_top_two {
+    width: 49%;
+  }
+  .bottom_logo img {
+    width: 58%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -4365,6 +4645,112 @@ ul {
   position: relative;
 }
 
+@media only screen and (max-width: 1280px) {
+  /* делать это разрешение */
+}
+
+@media screen and (max-width: 1080px) {
+  .header_buner_container h1 {
+    line-height: 1.16129;
+    font-size: 3.4rem;
+  }
+  .header_buner_container h3 {
+    font-size: 1.35rem;
+  }
+  .wellcome_descr {
+    font-size: 1.6rem;
+  }
+}
+
+/* первое разрешение под казачика */
+@media only screen and (max-width: 1024px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 960px) {
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 3.2rem;
+  }
+  .header_buner_buttons {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* делать это разрешение */
+  .header_buner_container h2 {
+    font-size: 2.35rem;
+  }
+  .header_buner_container h1 {
+    font-size: 2.5rem;
+  }
+  .header_buner_buttons {
+    width: 65%;
+  }
+  .header_buner_container h3 {
+    font-size: 1.2rem;
+  }
+  .row_person {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .choose_item {
+    width: 48%;
+    margin-bottom: 3%;
+  }
+  .footer_top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .footer_top_foure,
+  .footer_top_three,
+  .footer_top_one,
+  .footer_top_two {
+    width: 49%;
+  }
+  .bottom_logo img {
+    width: 58%;
+  }
+  .footer_top_one,
+  .footer_top_two {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 640px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 600px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 480px) {
+  /* делать это разрешение */
+}
+
+@media only screen and (max-width: 320px) {
+  /* делать это разрешение */
+}
+
+/*==========  Mobile First  ==========*/
+/*
+// Small devices (landscape phones, 576px and up) */
+/*
+// Medium devices (tablets, 768px and up)
+ */
+/*
+// Large devices (desktops, 992px and up)
+ */
+/*
+// Extra large devices (large desktops, 1200px and up) */
 @media only screen and (max-width: 1280px) {
   /* делать это разрешение */
 }
