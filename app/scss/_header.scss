@@ -27,7 +27,14 @@
 .top_contacts_items .fa {
 	@include fontsize-lineheight(24, 15);
 }
-
+.top_contacts_items a {
+color: #000000;
+text-decoration: none;
+}
+.top_contacts_items a:hover {
+color: #010101 ;
+text-decoration: underline;
+}
 .top_socials {
 	display: flex;
 }
@@ -39,12 +46,39 @@
 }
 
 .top_line_menu {
+background-color: #222533;
+}
+
+
+.top_menu_slider {
 	background-color: #222533;
-	@include trans;
-	position: relative;
- @include transition(all, 0.7s, ease);
+	position: fixed;
+	width: 100%;
+	top:-200px;
+	left:0;
+	z-index: 3;
+	@include transition(all, 0.8s, ease);
 
 }
+.top_menu_slider_active {
+	top:0;
+// top:200px;
+}
+
+
+
+
+
+.sticky,
+.navbar-fixed-top {
+position: fixed;
+   top: 0;
+}
+.top_line_menu_sticky {
+
+   top: 0;
+}
+
 
 .row_line_menu {
 	height: 90px;
@@ -259,7 +293,7 @@
 	font-weight: 700;
 	overflow: auto;
 	transition: .25s;
-	z-index: 10;
+	z-index: 2;
 }
 
 
@@ -306,7 +340,7 @@
 	position: relative;
 }
 .menu-sidebar .menu-item-has-children .sub-menu {
-	display: none;
+	// display: none;
 }
 .sub-menu {
 	list-style: none;
@@ -404,7 +438,9 @@
 }
 
 .toggle-button {
-    top: 80px;}
+    top: 32px;
+right:20px;
+}
 
 .f-nav {
 	position: fixed;

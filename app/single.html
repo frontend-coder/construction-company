@@ -13,11 +13,46 @@
 </head>
 
 <body>
-<span class="toggle-button">
+ <div class="top_menu_slider">
+   <div class="container">
+    <div class="row_person row_line_menu">
+     <div class="top_logo">
+      <img src="img/logo-construction.png" alt="логотип сайта">
+     </div>
+     <div class="top_menu">
+      <ul>
+       <li><a href="/">главная</a></li>
+       <li class="menu-item-has-children"><a href="page.html">услуги</a>
+        <ul>
+         <li><a href="/page.html">первая услуга</a></li>
+         <li><a href="/page.html">вторая услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+        </ul>
+       </li>
+       <li><a href="/calculate.html">калькулятор</a></li>
+       <li><a href="/category.html">блог</a></li>
+      </ul>
+     </div>
+     <div class='be-search'>
+      <div class="searchbutton">
+      </div>
+      <div class="search-form">
+       <form action="/search" class="searchform" method="get">
+        <input class="searchbar" name="s" placeholder="Введите запрос" type="text" x-webkit-speech="true">
+        <input class="searchsubmit" type="submit" value="Найти">
+       </form>
+      </div>
+     </div>
+
+      <span class="toggle-button">
     <div class="menu-bar menu-bar-top"></div>
     <div class="menu-bar menu-bar-middle"></div>
     <div class="menu-bar menu-bar-bottom"></div>
   </span>
+    </div>
+   </div>
+  </div>
 
   <div class="menu-wrap">
     <div class="menu-sidebar">
@@ -71,6 +106,7 @@
     </div>
    </div>
   </div>
+
   <div class="top_line_menu">
    <div class="container">
     <div class="row_person row_line_menu">
@@ -79,17 +115,17 @@
      </div>
      <div class="top_menu">
       <ul>
-       <li><a href="#">главная</a></li>
-       <li class="menu-item-has-children"><a href="#">услуги</a>
+       <li><a href="/">главная</a></li>
+       <li class="menu-item-has-children"><a href="page.html">услуги</a>
         <ul>
-         <li><a href="#">первая услуга</a></li>
-         <li><a href="#">вторая услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
+         <li><a href="/page.html">первая услуга</a></li>
+         <li><a href="/page.html">вторая услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
         </ul>
        </li>
-       <li><a href="#">калькулятор</a></li>
-       <li><a href="#">блог</a></li>
+       <li><a href="/calculate.html">калькулятор</a></li>
+       <li><a href="/category.html">блог</a></li>
       </ul>
      </div>
      <div class='be-search'>
@@ -102,12 +138,24 @@
        </form>
       </div>
      </div>
+
+
+      <span class="toggle-button">
+    <div class="menu-bar menu-bar-top"></div>
+    <div class="menu-bar menu-bar-middle"></div>
+    <div class="menu-bar menu-bar-bottom"></div>
+  </span>
+
     </div>
    </div>
+
   </div>
+
  </header><!-- /header -->
+
+
  <main>
-  <section class="block ">
+  <section class="block" id="slider_visible">
    <div class="container">
     <div class="row">
      <div class="category_wrap clearfix">
@@ -152,145 +200,126 @@
 
     <p class="nocomments">Эта запись защищена. Введите пароль, чтобы видеть комментарии </p>
 
-<div id="comments">
- <div class="comment-number">
-    <h4>5 комментариев <!-- Нет комментариев Один комментарий 3 комментариев -->
-    </h4>
-   <span><a href="#respond" title="<?php _e('Оставить комментарий', 'punchcut'); ?>">Оставить комментарий</a></span>
-  </div><!--end comment-number-->
-  <ol class="commentlist">
-   <li class="comment even thread-even depth-1" id="comment-1">
-    <div class="comment-box">
-      <div class="c-head"> <a href="#" class="url"> Автор комментария</a> <span> / апрель 18 2018</span> </div>
-      <div class="comment-content-box">
-        <div class="c-grav">
-          <img src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&d=mm&r=g 2x" class="avatar avatar-32 photo" alt="">
-        </div>
-        <div class="c-body">
-          <p>Привет! Это комментарий.<br>
-            Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br>
-          Аватары авторов комментариев загружаются с сервиса Gravatar.</p>
-          <div class="reply">
-            <a href="#" class="comment-reply-link">ответить</a> / <a href="#" class="comment-edit-link">редактировать</a>
-          </div>
-        </div><!--end c-body-->
+<!-- begin comments form  -->
+
+<!-- You can start editing here. -->
+
+
+
+
+<div class="comments-title" style="float:right;">4 комментария </div>
+<div style="clear:both"></div>
+  <ol class="commentlist" itemscope="" itemtype="http://schema.org/UserComments">
+      <li class="comment even thread-even depth-1" id="li-comment-6">
+
+        <div class="comment-box" id="comment-6">
+
+<div class="c-head">
+<cite class="url">Иван береза</cite> / <span>Август 5 2019</span>
+</div>
+
+<div class="comment-content-box">
+<div class="c-grav"><img alt='' src='http://0.gravatar.com/avatar/?s=58&#038;r=g' srcset='http://1.gravatar.com/avatar/?s=116&#038;r=g 2x' class='avatar avatar-58 photo avatar-default' height='58' width='58' /> </div>
+<div class="c-body"> <p>Это первый коммент</p>
       </div>
-    </div><!--end comment-box-->
-  </li>
-  <li class="comment even thread-even depth-1" id="comment-1">
-    <div class="comment-box">
-      <div class="c-head"> <a href="#" class="url"> Автор комментария</a> <span> / апрель 18 2018</span> </div>
-      <div class="comment-content-box">
-        <div class="c-grav">
-          <img src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&d=mm&r=g 2x" class="avatar avatar-32 photo" alt="">
+
         </div>
-        <div class="c-body">
-          <p>Привет! Это комментарий.<br>
-            Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br>
-          Аватары авторов комментариев загружаются с сервиса Gravatar.</p>
-          <div class="reply">
-            <a href="#" class="comment-reply-link">ответить</a> / <a href="#" class="comment-edit-link">редактировать</a>
-          </div>
-        </div><!--end c-body-->
-      </div>
-    </div><!--end comment-box-->
-  </li>
-  <li class="comment even thread-even depth-1" id="comment-1">
-    <div class="comment-box">
-      <div class="c-head"> <a href="#" class="url"> Автор комментария</a> <span> / апрель 18 2018</span> </div>
-      <div class="comment-content-box">
-        <div class="c-grav">
-          <img src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&d=mm&r=g 2x" class="avatar avatar-32 photo" alt="">
-        </div>
-        <div class="c-body">
-          <p>Привет! Это комментарий.<br>
-            Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br>
-          Аватары авторов комментариев загружаются с сервиса Gravatar.</p>
-          <div class="reply">
-            <a href="#" class="comment-reply-link">ответить</a> / <a href="#" class="comment-edit-link">редактировать</a>
-          </div>
-        </div><!--end c-body-->
-      </div>
-    </div><!--end comment-box-->
+        <div class="reply">
+             <a class="comment-edit-link" href="http://constructionstore.local/wp-admin/comment.php?action=editcomment&#038;c=6">Редактировать</a>  <a rel='nofollow' class='comment-reply-link' href='/blog-3/?replytocom=6#respond' data-commentid="6" data-postid="103" data-belowelement="comment-6" data-respondelement="respond" aria-label='Комментарий к записи Иван береза'>Ответить</a>        </div><!-- .reply -->
+    </div><!-- #comment-##  -->
+
     <ul class="children">
-     <li class="comment even thread-even depth-1" id="comment-1">
-      <div class="comment-box">
-        <div class="c-head"> <a href="#" class="url"> Автор комментария</a> <span> / апрель 18 2018</span> </div>
-        <div class="comment-content-box">
-          <div class="c-grav">
-            <img src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&d=mm&r=g 2x" class="avatar avatar-32 photo" alt="">
-          </div>
-          <div class="c-body">
-            <p>Привет! Это комментарий.<br>
-              Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br>
-            Аватары авторов комментариев загружаются с сервиса Gravatar.</p>
-            <div class="reply">
-              <a href="#" class="comment-reply-link">ответить</a> / <a href="#" class="comment-edit-link">редактировать</a>
-            </div>
-          </div><!--end c-body-->
-        </div>
-      </div><!--end comment-box-->
-    </li>
-  </ul>
-</li>
- <li class="comment even thread-even depth-1" id="comment-1">
-    <div class="comment-box">
-      <div class="c-head"> <a href="#" class="url"> Автор комментария</a> <span> / апрель 18 2018</span> </div>
-      <div class="comment-content-box">
-        <div class="c-grav">
-          <img src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&d=mm&r=g 2x" class="avatar avatar-32 photo" alt="">
-        </div>
-        <div class="c-body">
-          <p>Привет! Это комментарий.<br>
-            Чтобы начать модерировать, редактировать и удалять комментарии, перейдите на экран «Комментарии» в консоли.<br>
-          Аватары авторов комментариев загружаются с сервиса Gravatar.</p>
-          <div class="reply">
-            <a href="#" class="comment-reply-link">ответить</a> / <a href="#" class="comment-edit-link">редактировать</a>
-          </div>
-        </div><!--end c-body-->
+    <li class="comment odd alt depth-2" id="li-comment-8">
+
+        <div class="comment-box" id="comment-8">
+
+<div class="c-head">
+<cite class="url">Главия Нескуратова</cite> / <span>Август 5 2019</span>
+</div>
+
+<div class="comment-content-box">
+<div class="c-grav"><img alt='' src='http://1.gravatar.com/avatar/?s=58&#038;r=g' srcset='http://0.gravatar.com/avatar/?s=116&#038;r=g 2x' class='avatar avatar-58 photo avatar-default' height='58' width='58' /> </div>
+<div class="c-body"> <p>Это ответ на первый коментарий</p>
       </div>
-    </div><!--end comment-box-->
-  </li>
-</ol>
- <div class="navigation">
-    <div class="header_button">Старые комментарии</div>
-    <div class="header_button">Новые комментарии</div>
+
+        </div>
+        <div class="reply">
+             <a class="comment-edit-link" href="http://constructionstore.local/wp-admin/comment.php?action=editcomment&#038;c=8">Редактировать</a>  <a rel='nofollow' class='comment-reply-link' href='/blog-3/?replytocom=8#respond' data-commentid="8" data-postid="103" data-belowelement="comment-8" data-respondelement="respond" aria-label='Комментарий к записи Главия Нескуратова'>Ответить</a>        </div><!-- .reply -->
+    </div><!-- #comment-##  -->
+
+    <ul class="children">
+    <li class="comment byuser comment-author-construction bypostauthor even depth-3" id="li-comment-9">
+
+        <div class="comment-box" id="comment-9">
+
+<div class="c-head">
+<cite class="url">construction</cite> / <span>Август 5 2019</span>
+</div>
+
+<div class="comment-content-box">
+<div class="c-grav"><img alt='' src='http://2.gravatar.com/avatar/?s=58&#038;r=g' srcset='http://2.gravatar.com/avatar/?s=116&#038;r=g 2x' class='avatar avatar-58 photo avatar-default' height='58' width='58' /> </div>
+<div class="c-body"> <p>Это ответ на ответ к первому комментарию к записи</p>
+      </div>
+
+        </div>
+        <div class="reply">
+             <a class="comment-edit-link" href="http://constructionstore.local/wp-admin/comment.php?action=editcomment&#038;c=9">Редактировать</a>  <a rel='nofollow' class='comment-reply-link' href='/blog-3/?replytocom=9#respond' data-commentid="9" data-postid="103" data-belowelement="comment-9" data-respondelement="respond" aria-label='Комментарий к записи construction'>Ответить</a>        </div><!-- .reply -->
+    </div><!-- #comment-##  -->
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7">
+
+        <div class="comment-box" id="comment-7">
+
+<div class="c-head">
+<cite class="url">Иоанна беляева</cite> / <span>Август 5 2019</span>
+</div>
+
+<div class="comment-content-box">
+<div class="c-grav"><img alt='' src='http://1.gravatar.com/avatar/?s=58&#038;r=g' srcset='http://1.gravatar.com/avatar/?s=116&#038;r=g 2x' class='avatar avatar-58 photo avatar-default' height='58' width='58' /> </div>
+<div class="c-body"> <p>Это второй комментарий</p>
+      </div>
+
+        </div>
+        <div class="reply">
+             <a class="comment-edit-link" href="http://constructionstore.local/wp-admin/comment.php?action=editcomment&#038;c=7">Редактировать</a>  <a rel='nofollow' class='comment-reply-link' href='/blog-3/?replytocom=7#respond' data-commentid="7" data-postid="103" data-belowelement="comment-7" data-respondelement="respond" aria-label='Комментарий к записи Иоанна беляева'>Ответить</a>        </div><!-- .reply -->
+    </div><!-- #comment-##  -->
+
+    </li><!-- #comment-## -->
+  </ol>
+  <div class="navigation">
+    <div class="alignleftcom"></div>
+    <div class="alignrightcom"></div>
   </div>
-<p class="note"><?php _e('Комментарии закрыты.', 'punchcut') ?></p>
-</div><!--end #comments-->
-  <div id="respond">
-    <div class="cancel-comment-reply">
-      <small><a href="#" id="cancel-comment-reply-link" style="display:none;">Нажмите, чтобы отменить ответ.</a></small>
-    </div>
-    <h5 id="postcomment">Оставить комментарий</h5>
-      <p class="logged-in">Вы должны быть <a href="#">войти под своим именем</a> чтобы оставить комментарий.</p>
- <form action="#" method="post" id="commentform">
-      <p class="bloged-in">Вошли как <a href="#">Имя</a>. <a href="#" title="Log out of this account">Выйти</a></p>
+ <div id="respond">
+  <div id="postcomment" class="comments-title">Оставьте свой комментарий или вопрос</div>
+<div class="cancel-comment-reply">
+  <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog-3/#respond" style="display:none;">Нажмите, чтобы отменить ответ.</a></small>
+</div>
 
+<form action="http://constructionstore.local/wp-comments-post.php" method="post" id="commentform">
+<p class="logged-in">Вы вошли как <a href="http://constructionstore.local/wp-admin/profile.php">construction</a>. <a href="http://constructionstore.local/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fconstructionstore.local%2Fblog-3%2F&amp;_wpnonce=0400025168" title="Выйти из этого аккаунта">Выйти &raquo;</a></p>
+<div>
 
-        <div>
-          <label for="author" class="comment-field">Имя<span>*</span></label>
-          <input class="commenting_input" type="text" name="author" id="author" value="">
-        </div>
-        <div>
-          <label for="email" class="comment-field">E-mail <span>*</span></label>
-          <input class="commenting_input" type="text" name="email" id="email" value="">
-        </div>
-        <div>
-          <label for="url" class="comment-field">Адрес Вашего сайта</label>
-          <input class="commenting_input" type="text" name="url" id="url" value="">
-        </div>
-       <div>
-        <label for="comment" class="comment-field">Комментарий</label>
-        <textarea class="commenting_textarea" name="comment" id="comment" cols="50" rows="10" tabindex="4"></textarea>
-      </div>
-      <div>
-        <input class="wellcome_link" name="submit" type="submit" id="submit" value="Добавить комментарий">
-        <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>">
-      </div>
-    </form><!--end commentform-->
-   </div>         <!-- end respond -->
+<div>
+  <label for="comment" class="comment-field">Комментарий</label><textarea class="commenting_textarea" name="comment" id="comment" rows="4" tabindex="4" ></textarea></div>
+</div>
 
+<div>
+  <input class="wellcome_link" name="submit" type="submit" id="submit" tabindex="5" value="Добавить комментарий" />
+<input type='hidden' name='comment_post_ID' value='103' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</div>
+
+<input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment_disabled" value="999c616890" /><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+
+</form>
+
+</div>
 
 <!-- end comments form  -->
 

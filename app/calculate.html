@@ -13,11 +13,46 @@
 </head>
 
 <body>
-<span class="toggle-button">
+ <div class="top_menu_slider">
+   <div class="container">
+    <div class="row_person row_line_menu">
+     <div class="top_logo">
+      <img src="img/logo-construction.png" alt="логотип сайта">
+     </div>
+     <div class="top_menu">
+      <ul>
+       <li><a href="/">главная</a></li>
+       <li class="menu-item-has-children"><a href="page.html">услуги</a>
+        <ul>
+         <li><a href="/page.html">первая услуга</a></li>
+         <li><a href="/page.html">вторая услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+        </ul>
+       </li>
+       <li><a href="/calculate.html">калькулятор</a></li>
+       <li><a href="/category.html">блог</a></li>
+      </ul>
+     </div>
+     <div class='be-search'>
+      <div class="searchbutton">
+      </div>
+      <div class="search-form">
+       <form action="/search" class="searchform" method="get">
+        <input class="searchbar" name="s" placeholder="Введите запрос" type="text" x-webkit-speech="true">
+        <input class="searchsubmit" type="submit" value="Найти">
+       </form>
+      </div>
+     </div>
+
+      <span class="toggle-button">
     <div class="menu-bar menu-bar-top"></div>
     <div class="menu-bar menu-bar-middle"></div>
     <div class="menu-bar menu-bar-bottom"></div>
   </span>
+    </div>
+   </div>
+  </div>
 
   <div class="menu-wrap">
     <div class="menu-sidebar">
@@ -73,7 +108,8 @@
     </div>
    </div>
   </div>
-  <div class="top_line_menu">
+
+   <div class="top_line_menu">
    <div class="container">
     <div class="row_person row_line_menu">
      <div class="top_logo">
@@ -81,17 +117,17 @@
      </div>
      <div class="top_menu">
       <ul>
-       <li><a href="#">главная</a></li>
-       <li class="menu-item-has-children"><a href="#">услуги</a>
+       <li><a href="/">главная</a></li>
+       <li class="menu-item-has-children"><a href="page.html">услуги</a>
         <ul>
-         <li><a href="#">первая услуга</a></li>
-         <li><a href="#">вторая услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
+         <li><a href="/page.html">первая услуга</a></li>
+         <li><a href="/page.html">вторая услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
+         <li><a href="/page.html">третья услуга</a></li>
         </ul>
        </li>
-       <li><a href="#">калькулятор</a></li>
-       <li><a href="#">блог</a></li>
+       <li><a href="/calculate.html">калькулятор</a></li>
+       <li><a href="/category.html">блог</a></li>
       </ul>
      </div>
      <div class='be-search'>
@@ -104,10 +140,21 @@
        </form>
       </div>
      </div>
+
+
+      <span class="toggle-button">
+    <div class="menu-bar menu-bar-top"></div>
+    <div class="menu-bar menu-bar-middle"></div>
+    <div class="menu-bar menu-bar-bottom"></div>
+  </span>
+
     </div>
    </div>
+
   </div>
+
  </header><!-- /header -->
+
  <main>
   <section class="header_buner" style="background-image: url('../img/fon-header.jpg');">
    <div class="container">
@@ -126,7 +173,7 @@
     </div>
    </div>
   </section>
-  <section class="block">
+  <section class="block" id="slider_visible">
    <div class="container">
     <h2 class="calculate_title">основные показатели</h2>
     <div class="row">

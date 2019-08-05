@@ -3,52 +3,38 @@ $(document).ready(function () {
 	var $toggleButton = $('.toggle-button'),
     	$menuWrap = $('.menu-wrap'),
   $sidebarArrow = $('.sidebar-menu-arrow');
-
 	// Hamburger button
-
 	$toggleButton.on('click', function() {
 		$(this).toggleClass('button-open');
 		$menuWrap.toggleClass('menu-show');
+		 $("body").toggleClass("body_fixed");
+		 $("html").toggleClass("body_fixed");
 	});
-
 	// Sidebar navigation arrows
-
 	$sidebarArrow.click(function() {
 		$(this).next().slideToggle(300);
 	});
 
 
+     const checkStickyMenu = function() {
+         if ($(window).scrollTop() > $("#slider_visible").offset().top){
+              $(".top_menu_slider").addClass("top_menu_slider_active ")
+         }
+         else {
+                 $(".top_menu_slider").removeClass("top_menu_slider_active ");
+         }
+     }
+ $(window).on("scroll", function() {
+        checkStickyMenu();
+ })
 
 
+   $(window).on("scroll", function() {
+      checkStickyMenu('slow');
+console.log("scroll " + "win scroll: " + $(window).scrollTop() + " secnav: " + parseInt($(".top_line_menu").offset().top));
+  })
+  checkStickyMenu();
 
-var nav = $('.top_line_menu');
-var navburger = $('.toggle-button');
-var bodyTegr = $('body');
-
-	$(navburger).on('click', function () {
-	$(this).toggleClass('f-burger');
-		$(bodyTegr).toggleClass('body_fixed');
-		nav.toggleClass('toplinehiden');
-	});
-
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 300) {
-		nav.addClass("f-nav").slideDown( "slow");
-		navburger.addClass("f-navburger");
-
-		} else {
-			nav.removeClass("f-nav");
-		navburger.removeClass("f-navburger");
-		}
-	});
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 300) {
-
-
-		} else {
-
-		}
-	});
 
 
 

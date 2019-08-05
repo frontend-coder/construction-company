@@ -49,7 +49,16 @@ body {
  * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
  */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system,
+ BlinkMacSystemFont,
+ 'Segoe UI',
+ Roboto,
+ Helvetica,
+ Arial,
+ sans-serif,
+ 'Apple Color Emoji',
+ 'Segoe UI Emoji',
+ 'Segoe UI Symbol';
 }
 
 /* Grouping content
@@ -3423,6 +3432,16 @@ ul {
   font-size: 0.9375rem;
 }
 
+.top_contacts_items a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.top_contacts_items a:hover {
+  color: #010101;
+  text-decoration: underline;
+}
+
 .top_socials {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3439,13 +3458,32 @@ ul {
 
 .top_line_menu {
   background-color: #222533;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  position: relative;
-  -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  transition: all 0.7s ease;
+}
+
+.top_menu_slider {
+  background-color: #222533;
+  position: fixed;
+  width: 100%;
+  top: -200px;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+
+.top_menu_slider_active {
+  top: 0;
+}
+
+.sticky,
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.top_line_menu_sticky {
+  top: 0;
 }
 
 .row_line_menu {
@@ -3671,11 +3709,14 @@ ul {
   left: -100%;
   font-size: 1em;
   font-weight: 700;
-  overflow: auto;
+  /* //overflow: auto;
+ */
+ overflow: hidden;
+  overflow-x: hidden;
   -webkit-transition: .25s;
   -o-transition: .25s;
   transition: .25s;
-  z-index: 10;
+  z-index: 2;
 }
 
 .menu-show {
@@ -3728,10 +3769,6 @@ ul {
 
 .menu-sidebar .menu-item-has-children {
   position: relative;
-}
-
-.menu-sidebar .menu-item-has-children .sub-menu {
-  display: none;
 }
 
 .sub-menu {
@@ -3858,7 +3895,8 @@ ul {
 }
 
 .toggle-button {
-  top: 80px;
+  top: 32px;
+  right: 20px;
 }
 
 .f-nav {
@@ -3880,6 +3918,8 @@ ul {
 
 .body_fixed {
   overflow: hidden;
+   overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .nav_burger_pos {
