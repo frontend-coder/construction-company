@@ -8,6 +8,8 @@
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	background-attachment: fixed;
+
 }
 
 .header_buner:before {
@@ -76,13 +78,14 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	cursor: pointer;
-	border:none;
+	border: none;
 	@include trans;
 }
 
 .wellcome_link:hover {
 	background-color: darken($top_line_color, 10%);
 }
+
 .calculate_form {
 	padding: 0;
 	margin: 0;
@@ -116,8 +119,8 @@
 }
 
 .calculate_size_item label span {
- //margin-bottom: 5px;
- text-transform: uppercase;
+	//margin-bottom: 5px;
+	text-transform: uppercase;
 }
 
 .field_title {
@@ -167,8 +170,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
- /* background: #fff200; */
- transition: 100ms ease-in-out;
+	/* background: #fff200; */
+	transition: 100ms ease-in-out;
 }
 
 .checkbox__input:checked~.checkbox__label:after {
@@ -509,8 +512,8 @@
 .footer_top_two,
 .footer_top_three,
 .footer_top_foure {
- //	border:1px solid red;
- position: relative;
+	//	border:1px solid red;
+	position: relative;
 }
 
 // оформление страницы категории
@@ -544,6 +547,7 @@
 	float: left;
 	width: 40%;
 }
+
 .post_box .post_item .single-thumb a img,
 .post_box .post_item .post-thumb a img {
 	display: block;
@@ -560,6 +564,7 @@
 .post_box .post_item .single_text {
 	margin-top: 20px;
 }
+
 .post_box .post_item .single_text .date_publish {
 	text-align: right;
 }
@@ -570,10 +575,12 @@
 	line-height: 1.2;
 	margin-bottom: 20px;
 }
+
 .post_box .post_item .single_text h2 {
 	text-transform: uppercase;
 	line-height: 1.8;
 }
+
 .post_box .post_item .single_text p,
 .post_box .post_item .post_text p {
 	margin-bottom: 20px;
@@ -583,7 +590,7 @@
 	display: block;
 	max-width: 100%;
 	height: auto;
-	margin:20px auto;
+	margin: 20px auto;
 }
 
 .post_box .post_item .single_text blockquote {
@@ -598,30 +605,31 @@
 	color: $color_link_comenk;
 	@include trans;
 }
+
 .post_box .post_item .single_text a:hover,
 .post_box .post_item .post_text a:hover {
-	color: darken( $color_link_comenk, 10%);
+	color: darken($color_link_comenk, 10%);
 	text-decoration: none;
 }
 
-.post_box .post_item .single_text .video{
+.post_box .post_item .single_text .video {
 	margin-left: 20px;
 	margin-right: 20px;
-	position:relative;
-	padding-bottom:56.25%;
-/*пропорции видео 16:9 */
-//padding-top:;
-height:0;
-text-align: center;
+	position: relative;
+	padding-bottom: 56.25%;
+	/*пропорции видео 16:9 */
+	//padding-top:;
+	height: 0;
+	text-align: center;
 }
 
 .post_box .post_item .single_text .video iframe {
-	position:absolute;
+	position: absolute;
 	display: inline-block;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .post_box .post_item .post_text .read_more {
@@ -679,6 +687,7 @@ text-align: center;
 	background-color: #ffcb0f;
 	color: #fff;
 }
+
 // оформление сайдбара
 
 .category_sidebar .widget {
@@ -700,20 +709,22 @@ text-align: center;
 .category_sidebar .widget ul {
 	padding-left: 30px;
 }
+
 .category_sidebar .widget ul li {
 	position: relative;
 	margin-bottom: 5px;
 }
+
 .category_sidebar .widget ul li:before {
 	left: -15px;
-	content:'\f103';
+	content: '\f103';
 	font-family: "FontAwesome";
-	color:$color_link_comenk;
+	color: $color_link_comenk;
 	position: absolute;
 }
 
 .category_sidebar .widget ul li a {
-	color:$color_link_comenk;
+	color: $color_link_comenk;
 	text-decoration: none;
 }
 
@@ -730,6 +741,7 @@ text-align: center;
 	border-right: none;
 	text-indent: 5px;
 }
+
 .category_sidebar .widget .searchform .submit {
 	width: 40%;
 	height: 40px;
@@ -769,13 +781,14 @@ text-align: center;
 	line-height: 50px;
 	text-transform: uppercase;
 	background-color: $top_line_color;
-	border:1px solid #000;
+	border: 1px solid #000;
 	cursor: pointer;
 }
 
 .error_fs .submit-search:hover {
 	background-color: darken($top_line_color, 10%);
 }
+
 .search_rezzult {
 	margin-top: 30px;
 	font-size: 1.3rem;
