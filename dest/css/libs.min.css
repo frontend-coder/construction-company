@@ -879,7 +879,7 @@ ul{list-style:none}
 .wellcome_text p:last-child{padding-bottom:0}
 .wellcome_link{display:inline-block;background-color:#ffcb0f;color:#fff;border-radius:10px;padding:15px 22px;text-transform:uppercase;text-decoration:none}
 .block_choose{padding:70px 0 60px;background-color:#f2f7fa}
-.block_title{text-align:center;color:#484848;font-size:1.875rem;padding-bottom:30px;text-transform:uppercase}
+.block_title{text-align:center;color:#484848;font-size:1.875rem;padding-bottom:30px;text-transform:uppercase;font-weight:400}
 .block_descr{padding-bottom:35px;text-align:center}
 .choose_item{width:23%}
 .choose_item_icon{width:115px;height:115px;display:flex;align-items:center;justify-content:center;margin:20px auto 45px;box-shadow:0 0 0 10px #ffcb0f,0 0 0 20px rgba(255,203,15,.4),0 0 0 30px rgba(255,203,15,.4);border-radius:50%;color:#484848;font-size:3.125rem;text-align:center}
@@ -887,7 +887,7 @@ ul{list-style:none}
 .choose_item_text{font-size:.9375rem}
 .services_img{margin-bottom:30px}
 .services_items{width:32%}
-.services_title{font-size:1.25rem;text-align:center;margin-bottom:20px}
+.services_title{font-size:1.25rem;text-align:center;margin-bottom:20px;font-weight:400}
 .services_text{font-size:.9375rem;margin-bottom:30px}
 .reviews_fon{min-height:740px;padding:66px 0 44px;background-color:transparent;background-repeat:no-repeat;background-position:center center;background-size:cover;position:relative}
 .reviews_block{padding:0;margin:0;display:flex;justify-content:space-between}
