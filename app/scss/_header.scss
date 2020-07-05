@@ -28,14 +28,18 @@
 .top_contacts_items .fa {
 	@include fontsize-lineheight(24, 15);
 }
+
 .top_contacts_items a {
-color: #000000;
-text-decoration: none;
+	color: #000000;
+	text-decoration: none;
+	@include transition(all, 0.3s, ease);
+	font-weight: 500;
 }
+
 .top_contacts_items a:hover {
-color: #010101 ;
-text-decoration: underline;
+	color: #DC143C;
 }
+
 .top_socials {
 	display: flex;
 }
@@ -44,10 +48,15 @@ text-decoration: underline;
 	@include fontsize-lineheight(24, 15);
 	padding: 3px 8px;
 	color: #000;
+	@include transition(all, 0.3s, ease);
+}
+
+.top_socials li a:hover {
+	color: #DC143C;
 }
 
 .top_line_menu {
-background-color: #222533;
+	background-color: #222533;
 }
 
 
@@ -55,15 +64,16 @@ background-color: #222533;
 	background-color: #222533;
 	position: fixed;
 	width: 100%;
-	top:-200px;
-	left:0;
+	top: -200px;
+	left: 0;
 	z-index: 3;
-	@include transition(all, 0.8s, ease);
+	@include transition(all, 0.3s, ease);
 
 }
+
 .top_menu_slider_active {
-	top:0;
-// top:200px;
+	top: 0;
+	// top:200px;
 }
 
 
@@ -72,12 +82,13 @@ background-color: #222533;
 
 .sticky,
 .navbar-fixed-top {
-position: fixed;
-   top: 0;
+	position: fixed;
+	top: 0;
 }
+
 .top_line_menu_sticky {
 
-   top: 0;
+	top: 0;
 }
 
 
@@ -224,7 +235,7 @@ position: fixed;
 	top: 0;
 	left: 90%;
 	margin: 0 0 0 20px;
- /*IE6 only*/
+	/*IE6 only*/
 }
 
 .top_menu ul li ul li a {
@@ -274,11 +285,11 @@ position: fixed;
 	padding: 10px 10px;
 	font-size: 0.9375rem;
 	line-height: 2.66667;
-	transition: all 0.2s ease;
+	@include transition(all, 0.3s, ease);
 }
 
 .top_menu ul li a:hover {
-	color: #ffffff;
+	color: #ffcb0f;
 }
 
 
@@ -305,23 +316,26 @@ position: fixed;
 	left: 0;
 	box-shadow: 4px 2px 15px 1px #B9ADAD;
 }
+
 .menu-sidebar {
 	margin: 75px 0 80px 10px;
 	position: relative;
 	top: 70px;
 }
+
 .menu-sidebar li {
 	padding: 18px 22px 0;
 }
-.menu-sidebar li > a {
+
+.menu-sidebar li>a {
 	color: #f3f3f3;
 	font-size: 1.18em;
 	position: relative;
 	text-decoration: none;
 }
 
-.menu-sidebar li ul li > a::after,
-.menu-sidebar li > a::after {
+.menu-sidebar li ul li>a::after,
+.menu-sidebar li>a::after {
 	content: "";
 	display: block;
 	height: 0.15em;
@@ -334,15 +348,19 @@ position: fixed;
 	transition: background-position .2s .1s ease-out;
 	background-size: 200% auto;
 }
-.menu-sidebar li > a:hover::after {
+
+.menu-sidebar li>a:hover::after {
 	background-position: -100% 0;
 }
+
 .menu-sidebar .menu-item-has-children {
 	position: relative;
 }
-.menu-sidebar .menu-item-has-children .sub-menu {
-	// display: none;
-}
+
+// .menu-sidebar .menu-item-has-children .sub-menu {
+// 	// display: none;
+// }
+
 .sub-menu {
 	list-style: none;
 }
@@ -354,10 +372,12 @@ position: fixed;
 	color: #FFFA3B;
 	position: relative;
 }
+
 .sidebar-menu-arrow:hover::after {
 	cursor: pointer;
 	color: #fff;
 }
+
 .sidebar-menu-arrow:active::after {
 	top: 2px;
 }
@@ -368,17 +388,20 @@ position: fixed;
 .toggle-button:hover {
 	cursor: pointer;
 }
+
 .toggle-button .menu-bar {
 	position: absolute;
 	border-radius: 2px;
 	width: 80%;
 	transition: .5s;
 }
+
 .toggle-button .menu-bar-top {
 	border: 4px solid #555;
 	border-bottom: none;
 	top: 0;
 }
+
 .toggle-button .menu-bar-middle {
 	height: 4px;
 	background-color: #555;
@@ -386,26 +409,31 @@ position: fixed;
 	margin-bottom: 7px;
 	top: 4px;
 }
+
 .toggle-button .menu-bar-bottom {
 	border: 4px solid #555;
 	border-top: none;
 	top: 22px;
 }
+
 .button-open {
 	// left: 25px;
-	top:77px;
+	top: 77px;
 }
+
 .button-open .menu-bar-top {
 	border-color: #fff;
 	transform: rotate(45deg) translate(8px, 8px);
 	transition: .5s;
 }
+
 .button-open .menu-bar-middle {
 	background-color: #fff;
 	transform: translate(230px);
 	transition: .1s ease-in;
 	opacity: 0;
 }
+
 .button-open .menu-bar-bottom {
 	border-color: #fff;
 	transform: rotate(-45deg) translate(7px, -7px);
@@ -413,7 +441,7 @@ position: fixed;
 }
 
 .toggle-button {
-    position: absolute;
+	position: absolute;
 	width: 44px;
 	height: 40px;
 	top: 30px;
@@ -426,27 +454,30 @@ position: fixed;
 .toggle-button .menu-bar-top {
 	border: 2px solid $top_line_color;
 }
+
 .toggle-button .menu-bar-middle {
 	height: 4px;
 	background-color: $top_line_color;
 }
+
 .toggle-button .menu-bar-bottom {
 	border: 2px solid $top_line_color;
 }
+
 .toggle-button {
 	display: none;
 	@include trans;
 }
 
 .toggle-button {
-    top: 32px;
-right:20px;
+	top: 32px;
+	right: 20px;
 }
 
 .f-nav {
 	position: fixed;
 	width: 100%;
-	top:0;
+	top: 0;
 	z-index: 2;
 }
 
@@ -457,52 +488,58 @@ right:20px;
 
 .f-burger {
 	position: fixed;
-    top: 81px;
+	top: 81px;
 }
 
 .body_fixed {
-overflow: hidden;
+	overflow: hidden;
 }
+
 .nav_burger_pos {
-    top: 34px;
+	top: 34px;
 }
+
 .toplinehiden {
 	top: - 200px;
 }
 
 @media only screen and (max-width : 1280px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {}
 
-
-}
 /* первое разрешение под казачика */
 @media only screen and (max-width: 1024px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 }
 
 @media only screen and (max-width: 960px) {
-/* делать это разрешение */
-.top_menu {display: none;}
-.top_contacts_items {
-	font-size: 0.9rem;
-	padding-right: 20px;
-}
-.row_line_menu {
-	padding-right: 70px;}
+
+	/* делать это разрешение */
+	.top_menu {
+		display: none;
+	}
+
+	.top_contacts_items {
+		font-size: 0.9rem;
+		padding-right: 20px;
+	}
+
+	.row_line_menu {
+		padding-right: 70px;
+	}
 
 	.toggle-button {
 		// position: fixed;
 		display: block;
 	}
 
-.top_line_menu {
-	z-index: 14;
-}
+	.top_line_menu {
+		z-index: 14;
+	}
 
 
 
@@ -510,30 +547,33 @@ overflow: hidden;
 
 
 @media only screen and (max-width: 800px) {
-/* делать это разрешение */
-.block_menu_fixed {
-	position: fixed;
-	top:0;
-	width: 100%;
-}
+
+	/* делать это разрешение */
+	.block_menu_fixed {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
 
 
 
 
 
 
-.footer_top {
-	flex-wrap: wrap;
-}
-.footer_top_foure,
-.footer_top_three,
-.footer_top_one,
-.footer_top_two {
-	width: 49%;
-}
-.bottom_logo img {
-     width: 58%;
-}
+	.footer_top {
+		flex-wrap: wrap;
+	}
+
+	.footer_top_foure,
+	.footer_top_three,
+	.footer_top_one,
+	.footer_top_two {
+		width: 49%;
+	}
+
+	.bottom_logo img {
+		width: 58%;
+	}
 
 
 
@@ -542,41 +582,37 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 
 
 }
 
 
-@media only screen and (max-width: 667px) {
-
-
-
-}
+@media only screen and (max-width: 667px) {}
 
 @media only screen and (max-width: 640px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 
 
 }
 
 @media only screen and (max-width: 600px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 
 }
 
 @media only screen and (max-width: 480px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 
 }
 
 
 @media only screen and (max-width: 320px) {
-/* делать это разрешение */
+	/* делать это разрешение */
 
 
 }
@@ -590,25 +626,18 @@ overflow: hidden;
 
 /*
 // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 576px) {}
 
-}
 /*
 // Medium devices (tablets, 768px and up)
  */
- @media (min-width: 768px) {
+@media (min-width: 768px) {}
 
- }
 /*
 // Large devices (desktops, 992px and up)
  */
- @media (min-width: 992px) {
+@media (min-width: 992px) {}
 
-
- }
 /*
 // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-
-}
+@media (min-width: 1200px) {}

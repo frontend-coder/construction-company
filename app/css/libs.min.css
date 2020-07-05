@@ -779,12 +779,13 @@ ul{list-style:none}
 .top_contacts{display:flex;width:50%}
 .top_contacts_items{line-height:1.6;font-size:.9375rem;padding-right:30px;white-space:nowrap}
 .top_contacts_items .fa{line-height:1.6;font-size:.9375rem}
-.top_contacts_items a{color:#000;text-decoration:none}
-.top_contacts_items a:hover{color:#010101;text-decoration:underline}
+.top_contacts_items a{color:#000;text-decoration:none;transition:.3s;font-weight:500}
+.top_contacts_items a:hover{color:#dc143c}
 .top_socials{display:flex}
-.top_socials li a{line-height:1.6;font-size:.9375rem;padding:3px 8px;color:#000}
+.top_socials li a{line-height:1.6;font-size:.9375rem;padding:3px 8px;color:#000;transition:.3s}
+.top_socials li a:hover{color:#dc143c}
 .top_line_menu{background-color:#222533}
-.top_menu_slider{background-color:#222533;position:fixed;width:100%;top:-200px;left:0;z-index:3;transition:.8s}
+.top_menu_slider{background-color:#222533;position:fixed;width:100%;top:-200px;left:0;z-index:3;transition:.3s}
 .top_menu_slider_active{top:0}
 .navbar-fixed-top,.sticky{position:fixed;top:0}
 .top_line_menu_sticky{top:0}
@@ -811,8 +812,8 @@ ul{list-style:none}
 .menu-item-has-children ul li a:after{display:none}
 .top_menu ul ul li:first-child>a{border-radius:3px 3px 0 0}
 .top_menu>ul>li.parent:hover>a::before{visibility:visible;transition:.5s .2s}
-.top_menu ul li a{display:block;text-decoration:none;text-transform:uppercase;color:#f8f3f3;padding:10px;font-size:.9375rem;line-height:2.66667;transition:.2s}
-.top_menu ul li a:hover{color:#fff}
+.top_menu ul li a{display:block;text-decoration:none;text-transform:uppercase;color:#f8f3f3;padding:10px;font-size:.9375rem;line-height:2.66667;transition:.3s}
+.top_menu ul li a:hover{color:#ffcb0f}
 .menu-wrap{background-color:#222533;position:fixed;top:0;height:100%;width:100%;left:-100%;font-size:1em;font-weight:700;overflow:auto;transition:.25s;z-index:2}
 .menu-show{left:0;box-shadow:4px 2px 15px 1px #b9adad}
 .menu-sidebar{margin:75px 0 80px 10px;position:relative;top:70px}
@@ -908,16 +909,17 @@ ul{list-style:none}
 .form_block_items h3 span{display:block;font-family:OpenSansLight,sans-serif}
 .contact_form_item{width:48%;margin-bottom:2%}
 .contact_form_item:nth-child(3){width:64%}
-.contact_form_item:nth-child(4){width:34%}
+.contact_form_item:nth-child(4){width:34%;align-self:flex-end;margin-bottom:18px}
 .contact_form_input,.contact_form_textarea,.get-buttons{width:100%;background-color:#fefefe;border-radius:10px;border:1px solid #fefefe;height:40px;line-height:40px;color:#adadad;font-size:.9375rem}
 .contact_form_input,.contact_form_textarea{text-indent:10px}
 .get-buttons{background-color:#73757e;color:#fff;border-color:#73757e;cursor:pointer}
-.contact_form_textarea{resize:none}
+.contact_form_textarea{resize:none;min-height:100px;line-height:1.4;padding:5px}
 .all_adwice{text-align:center;margin-top:60px}
 .footer_bottom{background-color:#1a1c27;padding:25px 0;display:flex;justify-content:center;align-items:center}
 .footer_bottom ul li{display:inline-block;color:#fff;border-right:1px solid #fff;padding:0 10px}
 .footer_bottom ul li:last-child{border-right:none}
-.footer_bottom ul li a{color:#ffcb0f;text-decoration:none}
+.footer_bottom ul li a{color:#ffcb0f;text-decoration:none;transition:.3s}
+.footer_bottom ul li a:hover{text-decoration:underline}
 .footer_top_fon{padding:100px 0 60px;min-height:540px;background-color:transparent;background-position:center center;background-repeat:no-repeat;background-size:cover;position:relative}
 .footer_top{display:flex;justify-content:space-between;color:#fff}
 .footer_top:before{position:absolute;content:'';width:100%;height:100%;background-color:#00000059;top:0;left:0;right:0;bottom:0}
@@ -927,20 +929,21 @@ ul{list-style:none}
 .bottom_logo img{display:inline-block;width:80%;height:auto}
 .footer_bottom_text{font-size:.9375rem;margin-bottom:30px;font-family:OpenSansLight,sans-serif}
 .footer_bottom_social li{padding-left:5px;display:inline-block}
-.footer_bottom_social li a{background-color:#ffcb0f;border-radius:50%;font-size:.8rem;display:inline-block;width:25px;height:25px;line-height:25px;text-align:center;color:#000}
+.footer_bottom_social li a{background-color:#ffcb0f;border-radius:50%;font-size:.8rem;display:inline-block;width:25px;height:25px;line-height:25px;text-align:center;color:#000;transition:.3s}
+.footer_bottom_social li a:hover{background-color:#000;color:#ffcb0f}
 .footer_pages_links{padding:0 0 0 20px}
-.footer_pages_links li a{font-size:.9375rem;color:#fff;text-decoration:none;position:relative;font-family:OpenSansLight,sans-serif}
+.footer_pages_links li a{font-size:.9375rem;color:#fff;text-decoration:none;position:relative;font-family:OpenSansLight,sans-serif;transition:.3s}
 .footer_pages_links li a:after{top:0;left:-14px;font-size:.9375rem;position:absolute;content:'\f0da';color:#fff;font-weight:900;font-family:FontAwesome}
 .footer_latest_post li{margin-bottom:20px}
-.footer_latest_post li a{font-size:.9375rem;font-family:OpenSansLight,sans-serif;color:#fff;text-decoration:none;transition:.5s}
-.footer_latest_post li a:hover{color:#fefefe}
+.footer_latest_post li a{font-size:.9375rem;font-family:OpenSansLight,sans-serif;color:#fff;text-decoration:none;transition:.3s}
+.footer_contacts li a:hover,.footer_latest_post li a:hover,.footer_pages_links li a:hover{color:#ccc}
 .footer_post_wrap{border:1px solid #fff;border-radius:50%;text-align:center;width:50px;height:50px;margin-right:5px;float:left}
 .footer_post_date{font-size:1.25rem}
 .footer_post_month{display:block;font-size:.75rem;font-family:OpenSansLight,sans-serif;text-transform:uppercase}
 .footer_contacts{padding:0 0 0 30px;margin:0}
 .footer_contacts li{margin-bottom:10px;font-size:.9375rem;font-family:OpenSansLight,sans-serif}
 .footer_contacts li span{position:relative}
-.footer_contacts li a{color:#fff;text-decoration:none;display:block;line-height:1.9;position:relative}
+.footer_contacts li a{color:#fff;text-decoration:none;display:block;line-height:1.9;position:relative;transition:.3s}
 .footer_contacts li a[href^="mailto:"]:before,.footer_contacts li a[href^="tell:"]:first-child:before,.footer_contacts li span:before{position:absolute;font-family:FontAwesome;color:#fff}
 .footer_contacts li span:before{top:2px;left:-18px;font-size:.9375rem;content:'\f041'}
 .footer_contacts li a[href^="mailto:"]:before{top:4px;left:-20px;font-size:.7rem;content:'\f0e0'}

@@ -334,6 +334,8 @@
 
 .contact_form_item:nth-child(4) {
 	width: 34%;
+	align-self: flex-end;
+	margin-bottom: 18px;
 }
 
 .get-buttons,
@@ -364,6 +366,9 @@
 
 .contact_form_textarea {
 	resize: none;
+	min-height: 100px;
+	line-height: 1.4;
+	padding: 5px;
 }
 
 .all_adwice {
@@ -393,6 +398,11 @@
 .footer_bottom ul li a {
 	color: $top_line_color;
 	text-decoration: none;
+	@include transition(all, 0.3s, ease);
+}
+
+.footer_bottom ul li a:hover {
+	text-decoration: underline;
 }
 
 .footer_top_fon {
@@ -478,6 +488,13 @@
 	line-height: 25px;
 	text-align: center;
 	color: #000;
+	@include transition(all, 0.3s, ease);
+}
+
+.footer_bottom_social li a:hover {
+	background-color: $top_line_color;
+	background-color: #000;
+	color: $top_line_color;
 }
 
 .footer_pages_links {
@@ -490,6 +507,7 @@
 	text-decoration: none;
 	position: relative;
 	font-family: "OpenSansLight", sans-serif;
+	@include transition(all, 0.3s, ease);
 }
 
 .footer_pages_links li a:after {
@@ -503,6 +521,7 @@
 	font-family: "FontAwesome";
 }
 
+
 .footer_latest_post li {
 	margin-bottom: 20px;
 }
@@ -512,11 +531,13 @@
 	font-family: "OpenSansLight", sans-serif;
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.5s ease;
+	@include transition(all, 0.3s, ease);
 }
 
-.footer_latest_post li a:hover {
-	color: darken(#fff, .4);
+.footer_contacts li a:hover,
+.footer_latest_post li a:hover,
+.footer_pages_links li a:hover {
+	color: darken(#fff, 20%);
 }
 
 .footer_post_wrap {
@@ -562,6 +583,7 @@
 	display: block;
 	line-height: 1.9000;
 	position: relative;
+	@include transition(all, 0.3s, ease);
 }
 
 .footer_contacts li span:before,
