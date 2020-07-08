@@ -1,97 +1,547 @@
-@media only screen and (max-width : 1280px) {
-/* делать это разрешение */
+@media only screen and (max-width : 1440px) {
+	/* делать это разрешение */
 }
 
+@media only screen and (max-width : 1336px) {
+
+	/* делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 3.8rem;
+	}
+}
+
+@media only screen and (max-width : 1280px) {
+	/* делать это разрешение */
+}
+
+@media only screen and (max-width : 1200px) {
+	/* делать это разрешение */
+}
 
 @media screen and (max-width: 1080px) {
+	.header_buner_container h1 {
+		line-height: 1.16129;
+		font-size: 3.4rem;
+	}
+
+	.header_buner_container h3 {
+		font-size: 1.35rem;
+	}
+
+	.wellcome_descr {
+		font-size: 1.6rem;
+	}
+
+	.wellcome_right_imgman {
+		top: -45%;
+		margin-top: 0;
+	}
+
+	.wellcome_right {
+		align-items: flex-end;
+	}
+
+
 
 }
+
 /* первое разрешение под казачика */
 @media only screen and (max-width: 1024px) {
-/* делать это разрешение */
 
+	/* делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 3.3rem;
+	}
+
+	.rezult_block_title {
+		font-size: 3.3rem;
+	}
+
+}
+
+@media only screen and (max-width : 992px) {
+	/* делать это разрешение */
+}
+
+@media only screen and (max-width : 980px) {
+	/* делать это разрешение */
 }
 
 @media only screen and (max-width: 960px) {
-/* делать это разрешение */
 
+	/* делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 3.2rem;
+	}
+
+	.rezult_block_title {
+		font-size: 3.2rem;
+	}
 
 }
 
 
+@media only screen and (max-width : 834px) {
+
+	.post_box .post_item .post_text {
+		margin-top: 30px;
+	}
+
+	.post_box .post_item .post_text,
+	.post_box .post_item .post-thumb {
+		padding: 0;
+		float: none;
+		width: 100%;
+	}
+
+
+	.calculate_form {
+		flex-wrap: wrap;
+	}
+
+	.calculate_form_input {
+		width: 80%;
+		padding: 0 10px;
+		margin: 0 auto 30px;
+	}
+
+
+	/* не обьязательно делать это разрешение */
+	.contact_form_item:nth-child(4) {
+		margin-bottom: 12px;
+	}
+
+	// .header_buner_buttons {
+	// 	width: 65%;
+	// }
+
+	.wellcome_title {
+		font-size: 2.3rem;
+	}
+
+	.wellcome_descr {
+		font-size: 1.4rem;
+	}
+
+	.footer_bottom_social li {
+		padding-left: 5px;
+		padding-bottom: 5px;
+	}
+
+}
+
+@media only screen and (max-width : 815px) {
+	/* не обьязательно делать это разрешение */
+}
+
+@media only screen and (max-width : 812px) {
+	/* не обьязательно делать это разрешение */
+}
+
 @media only screen and (max-width: 800px) {
-/* делать это разрешение */
+
+	/* делать это разрешение */
+	.rezult_block_title {
+		font-size: 2.7rem;
+	}
+
+	.header_buner_container h2 {
+		font-size: 2.35rem;
+	}
+
+	.header_buner_container h1 {
+		font-size: 2.5rem;
+	}
+
+	.header_buner_container h3 {
+		font-size: 1.2rem;
+	}
+
+	.row_person {
+		flex-wrap: wrap;
+	}
+
+	.choose_item {
+		width: 48%;
+		margin-bottom: 3%;
+	}
+
+	.footer_top {
+		flex-wrap: wrap;
+	}
+
+	.footer_top_foure,
+	.footer_top_three,
+	.footer_top_one,
+	.footer_top_two {
+		width: 49%;
+	}
+
+	.bottom_logo img {
+		width: 58%;
+	}
+
+	.footer_top_one,
+	.footer_top_two {
+		margin-bottom: 30px;
+	}
+
+	/* делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 2.70rem;
+	}
+
+	.header_buner_container h2 {
+		font-size: 2.10rem;
+	}
+
+	.category_content {
+		width: 100%;
+		float: none;
+		padding-right: 0;
+	}
+
+	.category_sidebar {
+		width: 70%;
+		margin: 30px auto;
+		float: none;
+	}
+
+
+
 
 }
 
 @media only screen and (max-width: 768px) {
-/* делать это разрешение */
+	/* делать это разрешение */
+}
+
+@media only screen and (max-width : 740px) {
+	/* не обьязательно делать это разрешение */
+}
+
+@media only screen and (max-width : 736px) {
+	/* делать это разрешение */
+}
+
+@media only screen and (max-width : 734px) {
+
+	/* не обьязательно делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 2.3rem;
+	}
+
+	.rezult_block_title {
+		font-size: 2.3rem;
+	}
 
 
 
 }
 
+@media only screen and (max-width : 684px) {
+
+	/* не обьязательно делать это разрешение */
+	.header_buner_container h2 {
+		font-size: 1.900rem;
+	}
+
+	.header_buner_container h3 {
+		font-size: 1.1rem;
+	}
+
+	.wellcome_title {
+		font-size: 2.0rem;
+	}
+
+}
 
 @media only screen and (max-width: 667px) {
+
+	/* делать это разрешение */
+	.wellcome_right {
+		display: none;
+	}
+
+	.wellcome_left {
+		width: 100%;
+		padding-right: 0;
+	}
+
 
 
 
 }
 
 @media only screen and (max-width: 640px) {
-/* делать это разрешение */
 
-
-
+	/* не обьязательно делать это разрешение */
+	.post_box .post_item .single_text h2,
+	.post_box .post_item .post_text h2,
+	.calculate_title {
+		font-size: 1.7rem;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-/* делать это разрешение */
+
+	/* делать это разрешение */
+	.rezult_block_title {
+		font-size: 2.0rem;
+	}
+
+	.header_buner_container h2 {
+		font-size: 1.85rem;
+	}
+
+	.top_socials {
+		display: none;
+	}
+
+	.header_buner_container h1 {
+		font-size: 2.0rem;
+	}
+
+	.header_buner_buttons .wellcome_link {
+		display: block;
+	}
+
+	.services_title {
+		font-size: 1.65rem;
+	}
+
+	.services_items {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.services_img {
+		display: flex;
+		justify-content: center;
+	}
+
+	.reviews_block_items {
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+
+	.reviews_block {
+		flex-wrap: wrap;
+	}
+
+	.form_block_items {
+		width: 100%;
+	}
+
+	.form_block_items:nth-child(1) {
+		margin-bottom: 20px;
+	}
+
+	.choose_item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 568px) {
+
+	/* делать это разрешение */
+	.header_buner_container h2 {
+		font-size: 1.7rem;
+	}
+
+	.header_buner_container h1 {
+		font-size: 2.9rem;
+	}
+
+	.choose_item_title {
+		font-size: 1.5rem;
+	}
+
+	.footer_bottom {
+		font-size: .9rem;
+	}
+
+	.rezult_block_title {
+		font-size: 2.9rem;
+	}
+
+	.rezult_list li span {
+		text-align: right;
+	}
+
+	.category_sidebar {
+		width: 100%;
+	}
 
 
 }
 
 @media only screen and (max-width: 480px) {
-/* делать это разрешение */
 
+	/* делать это разрешение */
+	.rezult_block_title {
+		font-size: 2.5rem;
+	}
+
+	.header_buner_container h1 {
+		font-size: 2.50rem;
+	}
+
+	.header_buner_container h2 {
+		font-size: 1.6rem;
+		line-height: 1.3;
+	}
+
+	.top_contacts {
+		display: block;
+	}
+
+	.calculate_form_input {
+		width: 100%;
+	}
+
+	.calculate_size_item {
+		width: 100%;
+	}
+
+	.rezult_list li span {
+		text-align: right;
+		display: block;
+	}
+
+	.rezult_list li {
+		display: flex;
+	}
+
+	.rezult_list li span {
+		width: 100%;
+		position: static;
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+	/* делать это разрешение */
+	#postcomment {
+		text-align: left;
+		padding: 10px;
+
+
+	}
+
+	.rezult_block_title {
+		font-size: 2rem;
+	}
+
+	.header_buner_container h1 {
+		font-size: 2.0rem;
+	}
+
+	.header_buner_buttons ul li {
+		margin-bottom: 20px;
+	}
+
+	.footer_top_foure,
+	.footer_top_one,
+	.footer_top_three,
+	.footer_top_two {
+		width: 100%;
+	}
+
+	.top_contacts_items {
+		padding-right: 8px;
+	}
+
+	.top_contacts {
+		flex-wrap: wrap;
+	}
+
+	.top_contacts_items a {
+		font-size: 1.1rem;
+	}
+
+	.contact_form_item,
+	.contact_form_item:nth-child(3) {
+		width: 100%;
+	}
+
+	.rezult_block_green_cost {
+		font-size: 2.5rem;
+	}
 
 }
 
+@media only screen and (max-width: 414px) {
+	/* делать это разрешение */
+}
+
+@media only screen and (max-width: 412px) {
+	/* не обьязательно делать это разрешение */
+
+}
+
+@media only screen and (max-width: 387px) {
+	/* не обьязательно делать это разрешение */
+}
+
+@media only screen and (max-width: 384px) {
+
+	/* делать это разрешение */
+	.search-form {
+		top: 100%;
+		/* right: 0; */
+		left: -189px;
+	}
+
+	.rezult_block_green_cost {
+		font-size: 2.3rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	/* не обьязательно делать это разрешение */
+}
+
+@media only screen and (max-width: 360px) {
+
+	/* делать это разрешение */
+	.header_buner_container h1 {
+		font-size: 1.5rem;
+	}
+
+	.header_buner_container h2 {
+		font-size: 1.6rem;
+		line-height: 1.0;
+	}
+
+	.form_block_items h3 {
+		font-size: 1.4rem;
+	}
+
+	.top_logo img {
+		width: 82%;
+	}
+
+	.top_line_menu .row_person,
+	.top_menu_slider .row_person {
+		flex-wrap: nowrap;
+	}
+
+	.rezult_block_title {
+		font-size: 1.5rem;
+	}
+
+}
 
 @media only screen and (max-width: 320px) {
-/* делать это разрешение */
 
-
+	/* делать это разрешение */
+	.search-form {
+		top: 100%;
+		left: -174px;
+	}
 }
-
-
-
-/*==========  Mobile First  ==========*/
-
-
-
-
-/*
-// Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-	}
-/*
-// Medium devices (tablets, 768px and up)
- */
-@media (min-width: 768px) {
-
-	 }
-/*
-// Large devices (desktops, 992px and up)
- */
-@media (min-width: 992px) {
-
-
-	}
-/*
-// Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-
-	}

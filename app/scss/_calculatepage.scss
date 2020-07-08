@@ -2,90 +2,6 @@
 	padding: 50px 0;
 }
 
-.header_buner {
-	min-height: 740px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	position: relative;
-	background-attachment: fixed;
-
-}
-
-.header_buner:before {
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	background-color: rgba(#000, .35);
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-.header_buner_inn {
-	min-height: 740px;
-	display: flex;
-	align-items: center;
-}
-
-.header_buner_container {
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	color: #fff;
-	position: relative;
-}
-
-.header_buner_container h2 {
-	@include fontsize-lineheight(72, 40);
-	padding-bottom: 35px;
-	font-family: "OpenSansLight", sans-serif;
-	text-transform: capitalize;
-}
-
-.header_buner_container h1 {
-	@include fontsize-lineheight(72, 62);
-	text-transform: uppercase;
-	padding-bottom: 35px;
-	font-family: "OpenSansBold", sans-serif;
-}
-
-.header_buner_container h1 span {
-	display: block;
-	color: $top_line_color;
-}
-
-.header_buner_container h3 {
-	@include font-size(23px);
-	padding-bottom: 53px;
-}
-
-.header_buner_buttons {
-	display: flex;
-	justify-content: space-between;
-	width: 40%;
-	margin: 0 auto;
-}
-
-.wellcome_link {
-	display: inline-block;
-	background-color: $top_line_color;
-	color: #fff;
-	border-radius: 10px;
-	padding: 15px 22px;
-	text-transform: uppercase;
-	text-decoration: none;
-	cursor: pointer;
-	border: none;
-	@include trans;
-}
-
-.wellcome_link:hover {
-	background-color: darken($top_line_color, 10%);
-}
-
 .calculate_form {
 	padding: 0;
 	margin: 0;
@@ -147,6 +63,7 @@
 	text-align: center;
 	margin-bottom: 30px;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .checkbox__label:before {
@@ -170,7 +87,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* background: #fff200; */
 	transition: 100ms ease-in-out;
 }
 
@@ -512,7 +428,6 @@
 .footer_top_two,
 .footer_top_three,
 .footer_top_foure {
-	//	border:1px solid red;
 	position: relative;
 }
 
@@ -574,11 +489,12 @@
 	@include font-size(25px);
 	line-height: 1.2;
 	margin-bottom: 20px;
+	font-weight: 400;
 }
 
 .post_box .post_item .single_text h2 {
 	text-transform: uppercase;
-	line-height: 1.8;
+
 }
 
 .post_box .post_item .single_text p,

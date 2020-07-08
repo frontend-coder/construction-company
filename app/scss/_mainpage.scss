@@ -62,10 +62,13 @@
 }
 
 .header_buner_buttons {
-	display: flex;
-	justify-content: space-between;
-	width: 40%;
 	margin: 0 auto;
+}
+
+.header_buner_buttons ul li {
+	display: inline-block;
+	margin-right: 20px;
+
 }
 
 .block_well {
@@ -622,162 +625,3 @@
 	//	border:1px solid red;
 	position: relative;
 }
-
-
-
-
-
-@media only screen and (max-width : 1280px) {
-	/* делать это разрешение */
-}
-
-
-@media screen and (max-width: 1080px) {
-	.header_buner_container h1 {
-		line-height: 1.16129;
-		font-size: 3.4rem;
-	}
-
-	.header_buner_container h3 {
-		font-size: 1.35rem;
-	}
-
-	.wellcome_descr {
-		font-size: 1.6rem;
-	}
-
-}
-
-/* первое разрешение под казачика */
-@media only screen and (max-width: 1024px) {
-	/* делать это разрешение */
-
-}
-
-@media only screen and (max-width: 960px) {
-
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 3.2rem;
-	}
-
-	.header_buner_buttons {
-		width: 46%;
-	}
-
-
-
-}
-
-
-@media only screen and (max-width: 800px) {
-
-	/* делать это разрешение */
-	.header_buner_container h2 {
-		font-size: 2.35rem;
-	}
-
-	.header_buner_container h1 {
-		font-size: 2.5rem;
-	}
-
-	.header_buner_buttons {
-		width: 65%;
-	}
-
-	.header_buner_container h3 {
-		font-size: 1.2rem;
-	}
-
-	.row_person {
-		flex-wrap: wrap;
-	}
-
-	.choose_item {
-		width: 48%;
-		margin-bottom: 3%;
-	}
-
-	.footer_top {
-		flex-wrap: wrap;
-	}
-
-	.footer_top_foure,
-	.footer_top_three,
-	.footer_top_one,
-	.footer_top_two {
-		width: 49%;
-	}
-
-	.bottom_logo img {
-		width: 58%;
-	}
-
-	.footer_top_one,
-	.footer_top_two {
-		margin-bottom: 30px;
-	}
-
-
-}
-
-@media only screen and (max-width: 768px) {
-	/* делать это разрешение */
-
-
-
-}
-
-
-@media only screen and (max-width: 667px) {}
-
-@media only screen and (max-width: 640px) {
-	/* делать это разрешение */
-
-
-
-}
-
-@media only screen and (max-width: 600px) {
-	/* делать это разрешение */
-
-
-}
-
-@media only screen and (max-width: 480px) {
-	/* делать это разрешение */
-
-
-}
-
-
-@media only screen and (max-width: 320px) {
-	/* делать это разрешение */
-
-
-}
-
-
-
-/*==========  Mobile First  ==========*/
-
-
-
-
-/*
-// Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/*
-// Medium devices (tablets, 768px and up)
- */
-@media (min-width: 768px) {}
-
-/*
-// Large devices (desktops, 992px and up)
- */
-@media (min-width: 992px) {}
-
-/*
-// Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
