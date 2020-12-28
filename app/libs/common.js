@@ -1,37 +1,54 @@
 $(document).ready(() => {
-  const $toggleButton = $('.toggle-button');
-  const $menuWrap = $('.menu-wrap');
-  const $sidebarArrow = $('.sidebar-menu-arrow');
-  // Hamburger button
-  $toggleButton.on('click', function () {
-    $(this).toggleClass('button-open');
-    $menuWrap.toggleClass('menu-show');
-    $('body').toggleClass('body_fixed');
-    $('html').toggleClass('body_fixed');
+  $('ul li:has(ul)').addClass('has-submenu');
+  $('ul li ul').addClass('sub-menu');
+  $('ul.dropdown li').hover(
+    function () {
+      $(this).addClass('hover');
+    },
+    function () {
+      $(this).removeClass('hover');
+    },
+  );
+  const $menu = $('#menu');
+  const $menulink = $('#spinner-form');
+  // const $search = $('#search');
+  // const $search_box = $('.search_box');
+  const $menuTrigger = $('.has-submenu > a');
+  $menulink.click((e) => {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    // if ($search.hasClass('active')) {
+    //   $('.menu.active').css('padding-top', '50px');
+    // }
   });
-  // Sidebar navigation arrows
-  $sidebarArrow.click(function () {
-    $(this).next().slideToggle(300);
+  // $search.click((e) => {
+  //   e.preventDefault();
+  //   $search_box.toggleClass('active');
+  // });
+  $menuTrigger.click(function (e) {
+    e.preventDefault();
+    const t = $(this);
+    t.toggleClass('active').next('ul').toggleClass('active');
   });
+  $('ul li:has(ul)');
 
-
-  const checkStickyMenu = function () {
-    if ($(window).scrollTop() > $('#slider_visible').offset().top) {
-      $('.top_menu_slider').addClass('top_menu_slider_active ');
+  function scrollMenu() {
+    const objToStick = $('.top_line_menu');
+    if ($(window).scrollTop() > 150) {
+      $(objToStick).addClass('active');
     } else {
-      $('.top_menu_slider').removeClass('top_menu_slider_active ');
+      $(objToStick).removeClass('active');
     }
-  };
-  $(window).on('scroll', () => {
-    checkStickyMenu();
-  });
 
-
-  $(window).on('scroll', () => {
-    checkStickyMenu('slow');
-    // console.log("scroll " + "win scroll: " + $(window).scrollTop() + " secnav: " + parseInt($(".top_line_menu").offset().top));
+    if ($(window).scrollTop() > 550) {
+      $(objToStick).addClass('visible');
+    } else {
+      $(objToStick).removeClass('visible');
+    }
+  }
+  window.addEventListener('scroll', () => {
+    scrollMenu();
   });
-  checkStickyMenu();
 
   $('.searchbutton').click(function () {
     $(this).toggleClass('active');
@@ -39,7 +56,8 @@ $(document).ready(() => {
   });
 
   // Ajax push mesege http://api.jquery.com/jquery.ajax/
-  $('form').submit(function () { // Change
+  $('form').submit(function () {
+    // Change
     const th = $(this);
     $.ajax({
       type: 'POST',

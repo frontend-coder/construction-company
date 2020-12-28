@@ -1,547 +1,492 @@
-@media only screen and (max-width : 1440px) {
-	/* делать это разрешение */
+@import "var";
+
+@media only screen and (max-width: 1440px) {
+  /* делать это разрешение */
 }
 
-@media only screen and (max-width : 1336px) {
-
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 3.8rem;
-	}
+@media only screen and (max-width: 1336px) {
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 3.8rem;
+  }
 }
 
-@media only screen and (max-width : 1280px) {
-	/* делать это разрешение */
+@media only screen and (max-width: 1280px) {
+  /* делать это разрешение */
 }
 
-@media only screen and (max-width : 1200px) {
-	/* делать это разрешение */
+@media only screen and (max-width: 1200px) {
+  /* делать это разрешение */
 }
 
 @media screen and (max-width: 1080px) {
-	.header_buner_container h1 {
-		line-height: 1.16129;
-		font-size: 3.4rem;
-	}
+  .header_buner_container h1 {
+    font-size: 3.4rem;
+    line-height: 1.16129;
+  }
 
-	.header_buner_container h3 {
-		font-size: 1.35rem;
-	}
+  .header_buner_container h3 {
+    font-size: 1.35rem;
+  }
 
-	.wellcome_descr {
-		font-size: 1.6rem;
-	}
+  .wellcome_descr {
+    font-size: 1.6rem;
+  }
 
-	.wellcome_right_imgman {
-		top: -45%;
-		margin-top: 0;
-	}
+  .wellcome_right_imgman {
+    top: -45%;
+    margin-top: 0;
+  }
 
-	.wellcome_right {
-		align-items: flex-end;
-	}
-
-
-
+  .wellcome_right {
+    align-items: flex-end;
+  }
 }
 
 /* первое разрешение под казачика */
 @media only screen and (max-width: 1024px) {
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 3.3rem;
+  }
 
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 3.3rem;
-	}
-
-	.rezult_block_title {
-		font-size: 3.3rem;
-	}
-
+  .rezult_block_title {
+    font-size: 3.3rem;
+  }
 }
 
-@media only screen and (max-width : 992px) {
-	/* делать это разрешение */
+@media only screen and (max-width: 992px) {
+  /* делать это разрешение */
 }
 
-@media only screen and (max-width : 980px) {
-	/* делать это разрешение */
+@media only screen and (max-width: 980px) {
+  /* делать это разрешение */
 }
 
 @media only screen and (max-width: 960px) {
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 3.2rem;
+  }
 
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 3.2rem;
-	}
-
-	.rezult_block_title {
-		font-size: 3.2rem;
-	}
-
+  .rezult_block_title {
+    font-size: 3.2rem;
+  }
 }
 
+@media only screen and (max-width: 834px) {
+  .post_box .post_item .post_text {
+    margin-top: 30px;
+  }
 
-@media only screen and (max-width : 834px) {
+  .post_box .post_item .post_text,
+  .post_box .post_item .post-thumb {
+    float: none;
+    padding: 0;
+    width: 100%;
+  }
 
-	.post_box .post_item .post_text {
-		margin-top: 30px;
-	}
+  .calculate_form {
+    flex-wrap: wrap;
+  }
 
-	.post_box .post_item .post_text,
-	.post_box .post_item .post-thumb {
-		padding: 0;
-		float: none;
-		width: 100%;
-	}
-
-
-	.calculate_form {
-		flex-wrap: wrap;
-	}
-
-	.calculate_form_input {
-		width: 80%;
-		padding: 0 10px;
-		margin: 0 auto 30px;
-	}
+  .calculate_form_input {
+    margin: 0 auto 30px;
+    padding: 0 10px;
+    width: 80%;
+  }
 
 
-	/* не обьязательно делать это разрешение */
-	.contact_form_item:nth-child(4) {
-		margin-bottom: 12px;
-	}
+  /* не обьязательно делать это разрешение */
+  .contact_form_item:nth-child(4) {
+    margin-bottom: 12px;
+  }
 
-	// .header_buner_buttons {
-	// 	width: 65%;
-	// }
+  // .header_buner_buttons {
+  // 	width: 65%;
+  // }
 
-	.wellcome_title {
-		font-size: 2.3rem;
-	}
+  .wellcome_title {
+    font-size: 2.3rem;
+  }
 
-	.wellcome_descr {
-		font-size: 1.4rem;
-	}
+  .wellcome_descr {
+    font-size: 1.4rem;
+  }
 
-	.footer_bottom_social li {
-		padding-left: 5px;
-		padding-bottom: 5px;
-	}
-
+  .footer_bottom_social li {
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
 }
 
-@media only screen and (max-width : 815px) {
-	/* не обьязательно делать это разрешение */
+@media only screen and (max-width: 815px) {
+  /* не обьязательно делать это разрешение */
 }
 
-@media only screen and (max-width : 812px) {
-	/* не обьязательно делать это разрешение */
+@media only screen and (max-width: 812px) {
+  /* не обьязательно делать это разрешение */
 }
 
 @media only screen and (max-width: 800px) {
+  /* делать это разрешение */
+  .rezult_block_title {
+    font-size: 2.7rem;
+  }
 
-	/* делать это разрешение */
-	.rezult_block_title {
-		font-size: 2.7rem;
-	}
+  .header_buner_container h3 {
+    font-size: 1.2rem;
+  }
 
-	.header_buner_container h2 {
-		font-size: 2.35rem;
-	}
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 2.7rem;
+  }
 
-	.header_buner_container h1 {
-		font-size: 2.5rem;
-	}
+  .header_buner_container h2 {
+    font-size: 2.1rem;
+  }
 
-	.header_buner_container h3 {
-		font-size: 1.2rem;
-	}
+  .row_person {
+    flex-wrap: wrap;
+  }
 
-	.row_person {
-		flex-wrap: wrap;
-	}
+  .choose_item {
+    margin-bottom: 3%;
+    width: 48%;
+  }
 
-	.choose_item {
-		width: 48%;
-		margin-bottom: 3%;
-	}
+  .footer_top {
+    flex-wrap: wrap;
+  }
 
-	.footer_top {
-		flex-wrap: wrap;
-	}
+  .footer_top_foure,
+  .footer_top_three,
+  .footer_top_one,
+  .footer_top_two {
+    width: 49%;
+  }
 
-	.footer_top_foure,
-	.footer_top_three,
-	.footer_top_one,
-	.footer_top_two {
-		width: 49%;
-	}
+  .bottom_logo img {
+    width: 58%;
+  }
 
-	.bottom_logo img {
-		width: 58%;
-	}
+  .footer_top_one,
+  .footer_top_two {
+    margin-bottom: 30px;
+  }
 
-	.footer_top_one,
-	.footer_top_two {
-		margin-bottom: 30px;
-	}
+  .category_content {
+    float: none;
+    padding-right: 0;
+    width: 100%;
+  }
 
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 2.70rem;
-	}
-
-	.header_buner_container h2 {
-		font-size: 2.10rem;
-	}
-
-	.category_content {
-		width: 100%;
-		float: none;
-		padding-right: 0;
-	}
-
-	.category_sidebar {
-		width: 70%;
-		margin: 30px auto;
-		float: none;
-	}
-
-
-
-
+  .category_sidebar {
+    float: none;
+    margin: 30px auto;
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-	/* делать это разрешение */
+  /* делать это разрешение */
 }
 
-@media only screen and (max-width : 740px) {
-	/* не обьязательно делать это разрешение */
+@media only screen and (max-width: 740px) {
+  /* не обьязательно делать это разрешение */
 }
 
-@media only screen and (max-width : 736px) {
-	/* делать это разрешение */
+@media only screen and (max-width: 736px) {
+  /* делать это разрешение */
 }
 
-@media only screen and (max-width : 734px) {
+@media only screen and (max-width: 734px) {
+  /* не обьязательно делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 2.3rem;
+  }
 
-	/* не обьязательно делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 2.3rem;
-	}
-
-	.rezult_block_title {
-		font-size: 2.3rem;
-	}
-
-
-
+  .rezult_block_title {
+    font-size: 2.3rem;
+  }
 }
 
-@media only screen and (max-width : 684px) {
+@media only screen and (max-width: 684px) {
+  /* не обьязательно делать это разрешение */
+  .header_buner_container h2 {
+    font-size: 1.9rem;
+  }
 
-	/* не обьязательно делать это разрешение */
-	.header_buner_container h2 {
-		font-size: 1.900rem;
-	}
+  .header_buner_container h3 {
+    font-size: 1.1rem;
+  }
 
-	.header_buner_container h3 {
-		font-size: 1.1rem;
-	}
-
-	.wellcome_title {
-		font-size: 2.0rem;
-	}
-
+  .wellcome_title {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 667px) {
+  /* делать это разрешение */
+  .wellcome_right {
+    display: none;
+  }
 
-	/* делать это разрешение */
-	.wellcome_right {
-		display: none;
-	}
-
-	.wellcome_left {
-		width: 100%;
-		padding-right: 0;
-	}
-
-
-
-
+  .wellcome_left {
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 640px) {
-
-	/* не обьязательно делать это разрешение */
-	.post_box .post_item .single_text h2,
-	.post_box .post_item .post_text h2,
-	.calculate_title {
-		font-size: 1.7rem;
-	}
+  /* не обьязательно делать это разрешение */
+  .post_box .post_item .single_text h2,
+  .post_box .post_item .post_text h2,
+  .calculate_title {
+    font-size: 1.7rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  /* делать это разрешение */
+  .rezult_block_title {
+    font-size: 2rem;
+  }
 
-	/* делать это разрешение */
-	.rezult_block_title {
-		font-size: 2.0rem;
-	}
+  .header_buner_container h2 {
+    font-size: 1.85rem;
+  }
 
-	.header_buner_container h2 {
-		font-size: 1.85rem;
-	}
+  .top_socials {
+    display: none;
+  }
 
-	.top_socials {
-		display: none;
-	}
+  .header_buner_container h1 {
+    font-size: 2rem;
+  }
 
-	.header_buner_container h1 {
-		font-size: 2.0rem;
-	}
+  .header_buner_buttons .wellcome_link {
+    display: block;
+  }
 
-	.header_buner_buttons .wellcome_link {
-		display: block;
-	}
+  .services_title {
+    font-size: 1.65rem;
+  }
 
-	.services_title {
-		font-size: 1.65rem;
-	}
+  .services_items {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 
-	.services_items {
-		width: 100%;
-		margin-bottom: 40px;
-	}
+  .services_img {
+    display: flex;
+    justify-content: center;
+  }
 
-	.services_img {
-		display: flex;
-		justify-content: center;
-	}
+  .reviews_block_items {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 
-	.reviews_block_items {
-		width: 100%;
-		margin-bottom: 20px;
+  .reviews_block {
+    flex-wrap: wrap;
+  }
 
-	}
+  .form_block_items {
+    width: 100%;
+  }
 
-	.reviews_block {
-		flex-wrap: wrap;
-	}
+  .form_block_items:nth-child(1) {
+    margin-bottom: 20px;
+  }
 
-	.form_block_items {
-		width: 100%;
-	}
-
-	.form_block_items:nth-child(1) {
-		margin-bottom: 20px;
-	}
-
-	.choose_item {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
+  .choose_item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 568px) {
+  /* делать это разрешение */
+  .header_buner_container h2 {
+    font-size: 1.7rem;
+  }
 
-	/* делать это разрешение */
-	.header_buner_container h2 {
-		font-size: 1.7rem;
-	}
+  .header_buner_container h1 {
+    font-size: 2.9rem;
+  }
 
-	.header_buner_container h1 {
-		font-size: 2.9rem;
-	}
+  .choose_item_title {
+    font-size: 1.5rem;
+  }
 
-	.choose_item_title {
-		font-size: 1.5rem;
-	}
+  .footer_bottom {
+    font-size: 0.9rem;
+  }
 
-	.footer_bottom {
-		font-size: .9rem;
-	}
+  .rezult_block_title {
+    font-size: 2.9rem;
+  }
 
-	.rezult_block_title {
-		font-size: 2.9rem;
-	}
+  .rezult_list li span {
+    text-align: right;
+  }
 
-	.rezult_list li span {
-		text-align: right;
-	}
-
-	.category_sidebar {
-		width: 100%;
-	}
-
-
+  .category_sidebar {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  /* делать это разрешение */
+  .rezult_block_title {
+    font-size: 2.5rem;
+  }
 
-	/* делать это разрешение */
-	.rezult_block_title {
-		font-size: 2.5rem;
-	}
+  .header_buner_container h1 {
+    font-size: 2.5rem;
+  }
 
-	.header_buner_container h1 {
-		font-size: 2.50rem;
-	}
+  .header_buner_container h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
 
-	.header_buner_container h2 {
-		font-size: 1.6rem;
-		line-height: 1.3;
-	}
+  .top_contacts {
+    display: block;
+  }
 
-	.top_contacts {
-		display: block;
-	}
+  .calculate_form_input {
+    width: 100%;
+  }
 
-	.calculate_form_input {
-		width: 100%;
-	}
+  .calculate_size_item {
+    width: 100%;
+  }
 
-	.calculate_size_item {
-		width: 100%;
-	}
+  .rezult_list li {
+    display: flex;
+  }
 
-	.rezult_list li span {
-		text-align: right;
-		display: block;
-	}
-
-	.rezult_list li {
-		display: flex;
-	}
-
-	.rezult_list li span {
-		width: 100%;
-		position: static;
-		text-align: right;
-	}
+  .rezult_list li span {
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  /* делать это разрешение */
+  #postcomment {
+    padding: 10px;
+    text-align: left;
+  }
 
-	/* делать это разрешение */
-	#postcomment {
-		text-align: left;
-		padding: 10px;
+  .rezult_block_title {
+    font-size: 2rem;
+  }
 
+  .header_buner_container h1 {
+    font-size: 2rem;
+  }
 
-	}
+  .header_buner_buttons ul li {
+    margin-bottom: 20px;
+  }
 
-	.rezult_block_title {
-		font-size: 2rem;
-	}
+  .footer_top_foure,
+  .footer_top_one,
+  .footer_top_three,
+  .footer_top_two {
+    width: 100%;
+  }
 
-	.header_buner_container h1 {
-		font-size: 2.0rem;
-	}
+  .top_contacts_items {
+    padding-right: 8px;
+  }
 
-	.header_buner_buttons ul li {
-		margin-bottom: 20px;
-	}
+  .top_contacts {
+    flex-wrap: wrap;
+  }
 
-	.footer_top_foure,
-	.footer_top_one,
-	.footer_top_three,
-	.footer_top_two {
-		width: 100%;
-	}
+  .top_contacts_items a {
+    font-size: 1.1rem;
+  }
 
-	.top_contacts_items {
-		padding-right: 8px;
-	}
+  .contact_form_item,
+  .contact_form_item:nth-child(3) {
+    width: 100%;
+  }
 
-	.top_contacts {
-		flex-wrap: wrap;
-	}
-
-	.top_contacts_items a {
-		font-size: 1.1rem;
-	}
-
-	.contact_form_item,
-	.contact_form_item:nth-child(3) {
-		width: 100%;
-	}
-
-	.rezult_block_green_cost {
-		font-size: 2.5rem;
-	}
-
+  .rezult_block_green_cost {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 414px) {
-	/* делать это разрешение */
+  /* делать это разрешение */
 }
 
 @media only screen and (max-width: 412px) {
-	/* не обьязательно делать это разрешение */
-
+  /* не обьязательно делать это разрешение */
 }
 
 @media only screen and (max-width: 387px) {
-	/* не обьязательно делать это разрешение */
+  /* не обьязательно делать это разрешение */
 }
 
 @media only screen and (max-width: 384px) {
+  /* делать это разрешение */
+  .search-form {
+    /* right: 0; */
+    left: -189px;
+    top: 100%;
+  }
 
-	/* делать это разрешение */
-	.search-form {
-		top: 100%;
-		/* right: 0; */
-		left: -189px;
-	}
-
-	.rezult_block_green_cost {
-		font-size: 2.3rem;
-	}
+  .rezult_block_green_cost {
+    font-size: 2.3rem;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-	/* не обьязательно делать это разрешение */
+  /* не обьязательно делать это разрешение */
 }
 
 @media only screen and (max-width: 360px) {
+  /* делать это разрешение */
+  .header_buner_container h1 {
+    font-size: 1.5rem;
+  }
 
-	/* делать это разрешение */
-	.header_buner_container h1 {
-		font-size: 1.5rem;
-	}
+  .header_buner_container h2 {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
 
-	.header_buner_container h2 {
-		font-size: 1.6rem;
-		line-height: 1.0;
-	}
+  .form_block_items h3 {
+    font-size: 1.4rem;
+  }
 
-	.form_block_items h3 {
-		font-size: 1.4rem;
-	}
+  .top_logo img {
+    width: 82%;
+  }
 
-	.top_logo img {
-		width: 82%;
-	}
+  .top_line_menu .row_person,
+  .top_menu_slider .row_person {
+    flex-wrap: nowrap;
+  }
 
-	.top_line_menu .row_person,
-	.top_menu_slider .row_person {
-		flex-wrap: nowrap;
-	}
-
-	.rezult_block_title {
-		font-size: 1.5rem;
-	}
-
+  .rezult_block_title {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-
-	/* делать это разрешение */
-	.search-form {
-		top: 100%;
-		left: -174px;
-	}
+  /* делать это разрешение */
+  .search-form {
+    left: -174px;
+    top: 100%;
+  }
 }

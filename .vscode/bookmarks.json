@@ -1,0 +1,22 @@
+[
+	{
+		"path": "$ROOTPATH$\\app\\scss\\_mainpage.scss",
+		"bookmarks": [
+			{
+				"line": 569,
+				"column": 0,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\app\\scss\\_calculatepage.scss",
+		"bookmarks": [
+			{
+				"line": 92,
+				"column": 0,
+				"label": ""
+			}
+		]
+	}
+]

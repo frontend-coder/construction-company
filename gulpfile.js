@@ -21,10 +21,6 @@ const del                                     = require('del');
 const plumber                                 = require('gulp-plumber');
 const notify                                  = require('gulp-notify');
 
-const ftp                                     = require('gulp-ftp');
-const vinyFTP                                 = require('vinyl-ftp');
-const gulpUtil                                = require('gulp-util');
-
 const browserSync                             = require('browser-sync').create();
 
 function styles() {
@@ -57,36 +53,38 @@ function styles() {
 		.pipe(sourcemaps.write(''))
 		.pipe(dest('app/css/'))
 }
-
 function calculate() {
-	return src([
-		'app/scss/libs.scss',
-		'app/scss/calculate.scss'
-	])
-		.pipe(plumber({
-			errorHandler: notify.onError(function (err) {
-				return {
-					title: 'Styles',
-					message: err.message
-				}
-			})
-		}))
-		.pipe(sourcemaps.init())
-		.pipe(sass().on('error', sass.logError))
-		.pipe(concat('calculate.css'))
-		.pipe(rename('calculate.min.css'))
-		.pipe(autoprefixer({
-			overrideBrowserlist: ['last 10 versions'],
-			grid: true
-		}))
-		.pipe(stripCssComments())
-		.pipe(cleancss(({
-			level: { 2: { specialComments: 0 } },
-			//			format: 'beautify'
-			format: 'keep-breaks'
-		}))) // Opt., comment out when debugging
-		.pipe(sourcemaps.write(''))
-		.pipe(dest('app/css/'))
+  return src(['app/scss/libs.scss', 'app/scss/calculate.scss'])
+    .pipe(
+      plumber({
+        errorHandler: notify.onError(function (err) {
+          return {
+            title: 'Styles',
+            message: err.message,
+          };
+        }),
+      })
+    )
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('calculate.css'))
+    .pipe(rename('calculate.min.css'))
+    .pipe(
+      autoprefixer({
+        overrideBrowserlist: ['last 10 versions'],
+        grid: true,
+      })
+    )
+    .pipe(stripCssComments())
+    .pipe(
+      cleancss({
+        level: { 2: { specialComments: 0 } },
+        //			format: 'beautify'
+        format: 'keep-breaks',
+      })
+    ) // Opt., comment out when debugging
+    .pipe(sourcemaps.write(''))
+    .pipe(dest('app/css/'));
 }
 
 function browsersync() {
@@ -137,8 +135,8 @@ function startwatch() {
 function buildcopy() {
 	return src(['app/css/**/*.min.css',
 		'app/js/**/*.min.js',
-		'app/**/*.html',
-		'app/**/*.php',
+		'app/*.html',
+		'app/*.php',
 		'app/**/ht.access'], {base:'app'})
 .pipe(dest('dest'))
 }
@@ -148,39 +146,10 @@ exports.scripts = scripts;
 exports.styles = styles;
 exports.calculate = calculate;
 
-
 exports.images = images;
 exports.cleanimg = cleanimg;
 exports.cleandest = cleandest;
 
 exports.build = series(cleandest, calculate, styles, scripts, images, buildcopy);
 
-exports.default = parallel(styles, calculate, scripts, browsersync, startwatch)
-
-// FTP: ftp://vh146.timeweb.ru
-// Логин: cc63120
-// Пароль: j7X4Y36Od5Zm
-// http://cw25156.tmweb.ru/
-
-// function ftp() {
-// let conn = vinyFTP.create( {
-// 	host:     'vh210.timeweb.ru',
-// 	user:     'cw25156',
-// 	password: '2qzRb2Wo2zjm',
-// 	parallel: 10,
-// 	log:      gulpUtil.log
-// 	} );
-
-// 	let globs = [
-// 	'dist/**'
-// 	];
-
-//  // using base = '.' will transfer everything to /public_html correctly
-//  // turn off buffering in gulp.src for best performance
-
-//     return gulp.src( globs, { base: './dist/', buffer: false } )
-//    .pipe( conn.newerOrDifferentSize( '/public_html' ) )// only upload newer files
-//    .pipe( conn.dest( '/public_html' ) );
-//   };
-
-// exports.ftp = ftp;
+exports.default = parallel(styles, calculate, scripts, browsersync, startwatch);
