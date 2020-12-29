@@ -1,5 +1,9 @@
 @import "var";
 
+.our_spech {
+  display: none;
+}
+
 @media only screen and (max-width: 1440px) {
   /* делать это разрешение */
 }
@@ -15,8 +19,22 @@
   /* делать это разрешение */
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1190px) {
   /* делать это разрешение */
+  form .checkbox_box .css-label .checkbox__label {
+    display: inline-block;
+    line-height: 1.4;
+  }
+
+  form .checkbox_box .css-label .checkbox__label::after {
+    left: -37px;
+    top: 20px;
+  }
+
+  form .checkbox_box .css-label .checkbox__label::before {
+    left: -37px;
+    top: 20px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -340,6 +358,10 @@
 
 @media only screen and (max-width: 480px) {
   /* делать это разрешение */
+  .header_buner_buttons ul li {
+    margin-bottom: 20px;
+  }
+
   .rezult_block_title {
     font-size: 2.5rem;
   }
@@ -374,6 +396,11 @@
     display: block;
     width: 100%;
     text-align: right;
+  }
+
+  form .checkbox_box,
+  .result_calcul_wraper {
+    width: 90%;
   }
 }
 
@@ -415,6 +442,7 @@
     font-size: 1.1rem;
   }
 
+  .contact_form_item:nth-child(4),
   .contact_form_item,
   .contact_form_item:nth-child(3) {
     width: 100%;
@@ -422,6 +450,11 @@
 
   .rezult_block_green_cost {
     font-size: 2.5rem;
+  }
+
+  .contact_form_item_order {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -431,17 +464,41 @@
 
 @media only screen and (max-width: 412px) {
   /* не обьязательно делать это разрешение */
+  .result_calcul_wraper,
+  .checkbox_box {
+    width: 80%;
+  }
+
+  .checkbox__label {
+    /* margin-left: 0.0rem; */
+    display: inline-block;
+    line-height: 1.4;
+  }
+
+  form .checkbox_box .css-label .checkbox__label::after {
+    left: -37px;
+    top: 20px;
+  }
+
+  form .checkbox_box .css-label .checkbox__label::before {
+    left: -37px;
+    top: 20px;
+  }
 }
 
 @media only screen and (max-width: 387px) {
   /* не обьязательно делать это разрешение */
+  .result_calcul_wraper {
+    /* display: none; */
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 384px) {
   /* делать это разрешение */
   .search-form {
     /* right: 0; */
-    left: -189px;
+    left: -250px;
     top: 100%;
   }
 
@@ -486,7 +543,7 @@
 @media only screen and (max-width: 320px) {
   /* делать это разрешение */
   .search-form {
-    left: -174px;
+    left: -232px;
     top: 100%;
   }
 }

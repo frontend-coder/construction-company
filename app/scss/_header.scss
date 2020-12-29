@@ -846,7 +846,7 @@
   }
 
   .row_line_menu {
-    padding-right: 70px;
+    padding-right: 10px;
   }
 
   .toggle-button {
@@ -894,38 +894,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .row_line_menu {
+    height: 65px;
+  }
+
   /* делать это разрешение */
 }
 
 @media only screen and (max-width: 480px) {
   /* делать это разрешение */
 }
-
-@media only screen and (max-width: 320px) {
-  /* делать это разрешение */
-}
-
-
-
-/* ==========  Mobile First  ========== */
-
-
-
-
-/*
-// Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/*
-// Medium devices (tablets, 768px and up)
- */
-@media (min-width: 768px) {}
-
-/*
-// Large devices (desktops, 992px and up)
- */
-@media (min-width: 992px) {}
-
-/*
-// Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
