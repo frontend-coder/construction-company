@@ -1,4 +1,4 @@
-## HTML шаблон MyCompany
+## HTML шаблон Construction Company
 
 Средний по сложности HTML-шаблон сверстан по одноименному PSD-макету. Он состоит из 9-ти простых блоков. К сожалению, во многих блоках размещены изображения-заглушки. Поэтому верстальщик обязан искать их в интернете или обратиться к потенциальному заказчику для уточнения деталей по наполнению шаблона.
 
@@ -9,38 +9,40 @@
 ### Мобильная адаптация
 
 Мобильная адаптация выполнена по нижеразмещенным точкам излома:
-    1920 
-1.  1440 
-2.  1336 
-3.  1280 
-4.  1080
-5.  1024
-6.   992
-7.   800
-8.   768 
-9.   736
-10.  684
-14.  667
-15.  600 
-16.  568
-17.  480
-18.  425
-19.  414
-20.  412
-21.  384
-22.  375
-22.  360
-23.  320
+
+ 1.  1920 
+ 2.  1440 
+ 3.  1336 
+ 4.  1280 
+ 5.  1080
+ 6.  1024
+ 7.   992
+ 8.   800
+ 9.   768 
+10.   736
+11.   684
+12.   667
+13.   600 
+14.   568
+15.   480
+16.   425
+17.   414
+18.   412
+19.   384
+20.   375
+21.   360
+22.   320
 
 Я выбрал эти точки излома рендомным способом, при желании заказчика могу адаптировать шаблон под любые разрешения.
 
 ## Связаться по вопросам создания сайта под ключ:
+<br>
 
-- [facebook](https://www.facebook.com/frontendercode)
-- [github](https://github.com/frontend-coder)
-- [skype:webrabcom](href="skype:webrabcom")
-- [telegram](https://t.me/frontendcoder)
+[![facebook](https://img.shields.io/badge/-Facebook-1877F2?style=for-the-badge&logo=Figma&logoColor=eeffff)](https://www.facebook.com/frontendercode)
+[![Telegram](https://img.shields.io/badge/-Telegram-26A5E4?style=for-the-badge&logo=Telegram&logoColor=eeffff)](https://t.me/frontendcoder)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=eeffff)](https://www.instagram.com/frontendercode/?hl=ru)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=eeffff)](https://github.com/frontend-coder)
 
-## Портфолио
 
-- [Портфолио](https://frontend-coder.github.io)
+
+[![Portfolio](https://img.shields.io/badge/-Портфолио-181717?style=for-the-badge&logo=Internet-Archive&logoColor=eeffff)](https://frontend-coder.github.io)
